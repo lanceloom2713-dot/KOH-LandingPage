@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kingdom of Holidays — Best Thailand Tour Packages</title>
-  <meta name="description" content="Customized Thailand tour packages with guaranteed best price, free cancellation, and no-cost EMI." />
+  <meta name="description"
+    content="Customized Thailand tour packages with guaranteed best price, free cancellation, and no-cost EMI." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="dns-prefetch" href="https://wsrv.nl" />
   <link rel="dns-prefetch" href="https://images.unsplash.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -34,31 +38,40 @@
     };
   </script>
   <style>
-    html { scroll-behavior: smooth; }
-    .font-display { font-family: Poppins, Inter, system-ui, sans-serif; }
-    .hero-gradient {
-      background: linear-gradient(
-        to right,
-        rgba(10, 25, 47, 0.85),
-        rgba(0, 52, 89, 0.75)
-      );
+    html {
+      scroll-behavior: smooth;
     }
+
+    .font-display {
+      font-family: Poppins, Inter, system-ui, sans-serif;
+    }
+
+    .hero-gradient {
+      background: linear-gradient(to right,
+          rgba(10, 25, 47, 0.85),
+          rgba(0, 52, 89, 0.75));
+    }
+
     .travel-divider {
       height: 4px;
       background: linear-gradient(90deg, #0a192f 0%, #003459 50%, #0a192f 100%);
     }
+
     .btn-travel-gradient {
       background: linear-gradient(90deg, #0a192f 0%, #003459 100%);
     }
+
     .btn-travel-warm {
       background: linear-gradient(90deg, #b8860b 0%, #ffd700 100%);
     }
+
     .glass-panel {
       background: rgba(255, 255, 255, 0.7);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
       border: 1px solid rgba(255, 255, 255, 0.5);
     }
+
     .video-frame-wrap {
       position: relative;
       width: 100%;
@@ -68,24 +81,29 @@
       background: linear-gradient(145deg, #e2e8f0, #f8fafc);
       transition: transform 300ms ease, box-shadow 300ms ease;
     }
+
     .video-frame-wrap:hover {
       transform: scale(1.02);
       box-shadow: 0 14px 34px rgba(2, 132, 199, 0.2);
     }
+
     .video-frame {
       width: 100%;
       height: 100%;
       border: 0;
       border-radius: 16px;
     }
+
     .sale-badge {
       background: linear-gradient(90deg, #ff512f, #dd2476);
     }
+
     .ripple-btn {
       position: relative;
       overflow: hidden;
       isolation: isolate;
     }
+
     .ripple-btn::after {
       content: '';
       position: absolute;
@@ -101,29 +119,37 @@
       pointer-events: none;
       z-index: -1;
     }
+
     .ripple-btn:active::after {
       transform: scale(26);
       opacity: 1;
       transition: 0s;
     }
+
     .slider-track {
       scroll-behavior: smooth;
       scrollbar-width: none;
       -ms-overflow-style: none;
     }
-    .slider-track::-webkit-scrollbar { display: none; }
+
+    .slider-track::-webkit-scrollbar {
+      display: none;
+    }
+
     .travel-art-bg {
       background:
         radial-gradient(circle at 12% 18%, rgba(255, 215, 0, 0.12), transparent 38%),
         radial-gradient(circle at 84% 76%, rgba(0, 52, 89, 0.14), transparent 42%),
         linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
     }
+
     .travel-art-bg-soft {
       background:
         radial-gradient(circle at 90% 10%, rgba(255, 215, 0, 0.1), transparent 34%),
         radial-gradient(circle at 10% 90%, rgba(10, 25, 47, 0.1), transparent 36%),
         linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
     }
+
     .how-card {
       background: rgba(255, 255, 255, 0.82);
       backdrop-filter: blur(8px);
@@ -131,16 +157,19 @@
       box-shadow: 0 10px 24px rgba(10, 25, 47, 0.08);
       transition: transform 280ms ease, box-shadow 280ms ease;
     }
+
     .how-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 18px 36px rgba(10, 25, 47, 0.14);
     }
+
     .video-preview-link {
       position: relative;
       display: block;
       width: 100%;
       height: 100%;
     }
+
     .video-preview-link::after {
       content: '';
       position: absolute;
@@ -148,11 +177,16 @@
       background: linear-gradient(to top, rgba(10, 25, 47, 0.6), rgba(10, 25, 47, 0.15), transparent);
       transition: opacity 220ms ease;
     }
-    .video-preview-link:hover::after { opacity: 0.78; }
+
+    .video-preview-link:hover::after {
+      opacity: 0.78;
+    }
+
     .play-chip {
       background: rgba(10, 25, 47, 0.8);
       backdrop-filter: blur(4px);
     }
+
     .about-bg-image {
       background-image:
         linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(248, 249, 250, 0.9)),
@@ -161,96 +195,100 @@
       background-size: cover;
       background-repeat: no-repeat;
     }
+
     .section-gap {
       padding-top: 48px;
       padding-bottom: 48px;
     }
+
     .reveal {
       opacity: 0;
       transform: translateY(24px);
       transition: opacity 650ms ease, transform 650ms ease;
     }
+
     .reveal.is-visible {
       opacity: 1;
       transform: translateY(0);
     }
+
     .package-skeleton {
       border-radius: 1rem;
       background: linear-gradient(110deg, #e2e8f0 8%, #f8fafc 18%, #e2e8f0 33%);
       background-size: 200% 100%;
       animation: 1.2s shine linear infinite;
     }
+
     @keyframes shine {
-      to { background-position-x: -200%; }
+      to {
+        background-position-x: -200%;
+      }
     }
   </style>
 </head>
+
 <body class="bg-softwhite font-sans text-slate-800 antialiased">
 
   <!-- Header -->
   <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 shadow-sm backdrop-blur-md">
     <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
       <a href="#" class="flex shrink-0 items-center gap-3">
-        <div class="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl bg-white shadow-md ring-2 ring-ocean/20 sm:h-12 sm:w-12">
-          <img
-            src="img/koh logo.jpeg"
-            alt="Kingdom of Holidays logo"
-            width="48"
-            height="48"
-            loading="eager"
-            decoding="async"
-            class="h-full w-full object-cover"
-            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-          />
-          <span class="hidden h-full w-full items-center justify-center bg-gradient-to-br from-navy to-[#003d7a] text-sm font-black text-white">KH</span>
+        <div
+          class="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl bg-white shadow-md ring-2 ring-ocean/20 sm:h-12 sm:w-12">
+          <img src="img/koh logo.jpeg" alt="Kingdom of Holidays logo" width="48" height="48" loading="eager"
+            decoding="async" class="h-full w-full object-cover"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <span
+            class="hidden h-full w-full items-center justify-center bg-gradient-to-br from-navy to-[#003d7a] text-sm font-black text-white">KH</span>
         </div>
         <div class="leading-tight">
-          <span class="font-display block text-sm font-bold tracking-tight text-navy sm:text-base">Kingdom of Holidays</span>
+          <span class="font-display block text-sm font-bold tracking-tight text-navy sm:text-base">Kingdom of
+            Holidays</span>
           <span class="hidden text-xs font-medium text-slate-500 sm:block">Thailand · Visa · Flights · Stays</span>
         </div>
       </a>
       <div class="flex flex-wrap items-center justify-end gap-2 sm:gap-3">
-        <div class="hidden rounded-xl border border-slate-200 bg-white px-3 py-2 text-[11px] font-medium text-slate-600 shadow-sm lg:block">
+        <div
+          class="hidden rounded-xl border border-slate-200 bg-white px-3 py-2 text-[11px] font-medium text-slate-600 shadow-sm lg:block">
           <div class="flex items-center gap-3">
             <span class="inline-flex items-center gap-1 font-semibold text-slate-800">
-  <i data-lucide="phone" class="h-3.5 w-3.5 text-ocean"></i>
-  9599260057 | 9971600663
-</span>
+              <i data-lucide="phone" class="h-3.5 w-3.5 text-ocean"></i>
+              9599260057 | 9971600663
+            </span>
 
-<span class="inline-flex items-center gap-1 font-semibold text-slate-800">
-  <i data-lucide="mail" class="h-3.5 w-3.5 text-ocean"></i>
-  info@kingdomofholidays.com
-</span>
+            <span class="inline-flex items-center gap-1 font-semibold text-slate-800">
+              <i data-lucide="mail" class="h-3.5 w-3.5 text-ocean"></i>
+              info@kingdomofholidays.com
+            </span>
           </div>
         </div>
-        <a href="https://wa.me/919599260057" class="btn-travel-gradient ripple-btn inline-flex items-center rounded-full px-4 py-2 text-xs font-bold text-white shadow-md ring-1 ring-white/10 transition hover:brightness-110 sm:px-5 sm:text-sm">
+        <a href="https://wa.me/919599260057"
+          class="btn-travel-gradient ripple-btn inline-flex items-center rounded-full px-4 py-2 text-xs font-bold text-white shadow-md ring-1 ring-white/10 transition hover:brightness-110 sm:px-5 sm:text-sm">
           Send Us Quotes
         </a>
       </div>
     </div>
   </header>
-  <div class="bg-gradient-to-r from-navy via-ocean to-navy px-4 py-2 text-center text-xs font-semibold tracking-wide text-accent sm:text-sm">
-    TAN License Number - MRTR09551D
+  <div
+    class="bg-gradient-to-r from-navy via-ocean to-navy px-4 py-2 text-center text-xs font-semibold tracking-wide text-accent sm:text-sm">
+    TAN License Number - MRTR09551D | IATTE /20-21/2157
   </div>
 
   <!-- Hero -->
-  <section class="relative isolate flex min-h-[calc(100vh-96px)] flex-col justify-center overflow-hidden px-4 pb-8 pt-10 sm:px-6 sm:pb-10 sm:pt-12 lg:px-8">
-    <img
-      src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?auto=format&fit=crop&w=2200&q=90"
-      data-direct="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?auto=format&fit=crop&w=2200&q=90"
-      alt=""
-      width="1920"
-      height="1080"
-      decoding="async"
-      fetchpriority="high"
-      referrerpolicy="no-referrer"
-      class="hero-img pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover object-center"
-    />
+  <section
+    class="relative isolate flex min-h-[calc(100vh-96px)] flex-col justify-center overflow-hidden px-4 pb-8 pt-10 sm:px-6 sm:pb-10 sm:pt-12 lg:px-8">
+    <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?auto=format&fit=crop&w=2200&q=90"
+      data-direct="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?auto=format&fit=crop&w=2200&q=90" alt=""
+      width="1920" height="1080" decoding="async" fetchpriority="high" referrerpolicy="no-referrer"
+      class="hero-img pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover object-center" />
     <div class="hero-gradient pointer-events-none absolute inset-0 -z-10"></div>
-    <div class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,rgba(72,202,228,0.15),transparent_55%)]"></div>
+    <div
+      class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,rgba(72,202,228,0.15),transparent_55%)]">
+    </div>
 
     <div class="relative z-10 mx-auto w-full max-w-7xl">
-      <div class="mb-2 inline-flex items-center gap-2 rounded-full bg-white/12 px-3 py-1.5 text-xs font-semibold text-white ring-1 ring-white/25 backdrop-blur-md sm:text-sm">
+      <div
+        class="mb-2 inline-flex items-center gap-2 rounded-full bg-white/12 px-3 py-1.5 text-xs font-semibold text-white ring-1 ring-white/25 backdrop-blur-md sm:text-sm">
         <span class="flex items-center gap-1 text-amber-300">
           <i data-lucide="star" class="h-4 w-4 fill-current"></i>
           4.6/5
@@ -258,25 +296,36 @@
         <span class="h-3 w-px bg-white/35"></span>
         <span>Trusted by 1 Lac+ travelers</span>
       </div>
-      <p class="mb-2 inline-flex items-center rounded-full bg-white/12 px-3 py-1 text-xs font-medium text-white backdrop-blur sm:text-sm">
+      <p
+        class="mb-2 inline-flex items-center rounded-full bg-white/12 px-3 py-1 text-xs font-medium text-white backdrop-blur sm:text-sm">
         <i data-lucide="map-pin" class="mr-1.5 h-4 w-4"></i>
         Bangkok · Pattaya · Phuket · Krabi &amp; more
       </p>
-      <h1 class="font-display max-w-3xl text-3xl font-extrabold leading-[1.15] tracking-tight text-white drop-shadow-sm sm:text-4xl md:text-5xl">
+      <h1
+        class="font-display max-w-3xl text-3xl font-extrabold leading-[1.15] tracking-tight text-white drop-shadow-sm sm:text-4xl md:text-5xl">
         Best Thailand Tour Packages
       </h1>
-      <p class="mt-3 inline-flex max-w-fit rounded-full bg-white/10 px-3 py-1 text-sm font-semibold italic tracking-[0.04em] text-white/95 ring-1 ring-white/20">
+      <p
+        class="mt-3 inline-flex max-w-fit rounded-full bg-white/10 px-3 py-1 text-sm font-semibold italic tracking-[0.04em] text-white/95 ring-1 ring-white/20">
         Itineraries crafted by experts
       </p>
       <p class="mt-3 max-w-2xl text-base font-medium leading-relaxed text-white sm:text-lg">
         Plan your Thailand trip from your city with <span class="font-bold text-white">Guaranteed Best Price</span>
       </p>
-      <div class="glass-panel mt-6 inline-flex items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold text-navy shadow-premium">
+      <div
+        class="glass-panel mt-6 inline-flex items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold text-navy shadow-premium">
         <svg viewBox="0 0 24 24" class="h-4 w-4" aria-hidden="true">
-          <path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.54-.2-2.27H12v4.3h6.46a5.52 5.52 0 0 1-2.4 3.62v3h3.88c2.27-2.1 3.55-5.19 3.55-8.65z"></path>
-          <path fill="#34A853" d="M12 24c3.24 0 5.95-1.07 7.93-2.9l-3.88-3c-1.08.73-2.47 1.17-4.05 1.17-3.11 0-5.74-2.1-6.68-4.92H1.32v3.08A12 12 0 0 0 12 24z"></path>
-          <path fill="#FBBC05" d="M5.32 14.35A7.2 7.2 0 0 1 4.95 12c0-.82.14-1.62.37-2.35V6.57H1.32a12 12 0 0 0 0 10.86l4-3.08z"></path>
-          <path fill="#EA4335" d="M12 4.77c1.76 0 3.34.6 4.59 1.79l3.45-3.45A11.5 11.5 0 0 0 12 0 12 12 0 0 0 1.32 6.57l4 3.08c.94-2.82 3.57-4.88 6.68-4.88z"></path>
+          <path fill="#4285F4"
+            d="M23.49 12.27c0-.79-.07-1.54-.2-2.27H12v4.3h6.46a5.52 5.52 0 0 1-2.4 3.62v3h3.88c2.27-2.1 3.55-5.19 3.55-8.65z">
+          </path>
+          <path fill="#34A853"
+            d="M12 24c3.24 0 5.95-1.07 7.93-2.9l-3.88-3c-1.08.73-2.47 1.17-4.05 1.17-3.11 0-5.74-2.1-6.68-4.92H1.32v3.08A12 12 0 0 0 12 24z">
+          </path>
+          <path fill="#FBBC05"
+            d="M5.32 14.35A7.2 7.2 0 0 1 4.95 12c0-.82.14-1.62.37-2.35V6.57H1.32a12 12 0 0 0 0 10.86l4-3.08z"></path>
+          <path fill="#EA4335"
+            d="M12 4.77c1.76 0 3.34.6 4.59 1.79l3.45-3.45A11.5 11.5 0 0 0 12 0 12 12 0 0 0 1.32 6.57l4 3.08c.94-2.82 3.57-4.88 6.68-4.88z">
+          </path>
         </svg>
         <span>⭐ 4.6/5 Google Rating</span>
       </div>
@@ -286,62 +335,108 @@
             <span class="text-xs font-bold uppercase tracking-wide text-slate-500">Land Only</span>
             <span class="text-lg text-slate-400 line-through">₹16,300</span>
           </div>
+
           <div class="mt-1 flex flex-wrap items-center gap-3">
             <span class="text-3xl font-extrabold text-navy">₹14,300</span>
-            <span class="rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-bold text-emerald-800">No Cost EMI</span>
+            <span class="rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-bold text-emerald-800">
+              No Cost EMI
+            </span>
           </div>
+
+          <!-- New WhatsApp Button -->
+          <a href="https://wa.me/919599260057" target="_blank" rel="noopener noreferrer"
+            class="btn-travel-gradient mt-4 inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-sm font-bold text-white transition hover:brightness-110">
+            Send Us Quotes
+          </a>
         </div>
         <div class="flex flex-wrap items-center gap-3 text-sm font-medium text-white/90">
           <div class="flex flex-col gap-2 text-sm font-medium text-white/90">
 
-  <div class="flex items-center gap-2">
-    <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
-    Flights optional
-  </div>
+            <div class="flex items-center gap-2">
+              <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+              Flights optional
+            </div>
 
-  <div class="flex items-center gap-2">
-    <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
-    GST-inclusive quotes on request
-  </div>
+            <div class="flex items-center gap-2">
+              <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+              GST-inclusive quotes on request
+            </div>
 
-  <div class="flex items-center gap-2">
-    <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
-    Expert itinerary tuning
-  </div>
+            <div class="flex items-center gap-2">
+              <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+              Expert itinerary tuning
+            </div>
 
-</div>
+          </div>
+        </div>
       </div>
-    </div>
   </section>
 
   <!-- Wave divider -->
   <div class="travel-divider"></div>
   <div class="relative -mt-px bg-slate-50 text-white">
-    <svg class="block w-full translate-y-px" viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path fill="#f8fafc" d="M0 48V20c120 22 240 33 360 33s240-11 360-33 240-22 360-22 240 11 360 33V48H0z"/>
+    <svg class="block w-full translate-y-px" viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true">
+      <path fill="#f8fafc" d="M0 48V20c120 22 240 33 360 33s240-11 360-33 240-22 360-22 240 11 360 33V48H0z" />
     </svg>
   </div>
 
   <!-- Lead capture placeholder -->
   <section id="quote-space" class="relative px-4 pb-6 pt-2 sm:px-6 lg:px-8">
-    <div class="mx-auto max-w-7xl overflow-hidden rounded-2xl border-2 border-dashed border-ocean/25 bg-white shadow-card">
+    <div
+      class="mx-auto max-w-7xl overflow-hidden rounded-2xl border-2 border-dashed border-ocean/25 bg-white shadow-card">
       <div class="grid gap-8 p-6 sm:grid-cols-2 sm:items-center sm:p-10">
         <div>
           <p class="text-xs font-bold uppercase tracking-wider text-ocean">Fast response</p>
           <h2 class="font-display mt-1 text-xl font-bold text-navy sm:text-2xl">Get your personalized quote</h2>
           <p class="mt-2 text-sm leading-relaxed text-slate-600">
+<<<<<<< HEAD:index.html
             Share travel dates &amp; budget — Our Thailand desk replies with options tailored to your city &amp; preferences.
           </p>
           <p class="mt-3 inline-flex items-center gap-2 text-xs font-semibold text-navy">
             <i data-lucide="clock" class="h-4 w-4 text-ocean"></i>
             Avg. callback under 15 minutes (business hours)
+=======
+            Share travel dates &amp; budget — our Thailand desk replies with options tailored to your city &amp;
+            preferences.
+>>>>>>> 474e72d (Updated UI sections and travel guide):kingdom-of-holidays-thailand.html
           </p>
+          <div
+            class="mt-4 inline-flex items-center gap-3 rounded-full border border-yellow-300 bg-gradient-to-r from-yellow-100 to-amber-50 px-4 py-2 shadow-sm">
+
+            <div class="flex h-8 w-8 items-center justify-center rounded-full bg-yellow-400 text-white shadow">
+              <i data-lucide="clock-3" class="h-4 w-4"></i>
+            </div>
+
+            <p class="text-sm font-bold text-yellow-900">
+              Avg. Callback Under
+              <span class="text-red-500">15 Minutes</span>
+              <span class="font-medium text-yellow-800">
+                (Business hours)
+              </span>
+            </p>
+
+          </div>
         </div>
         <div class="flex flex-col gap-3 sm:items-end">
           <div class="grid w-full max-w-md grid-cols-3 gap-2">
-            <img src="https://wsrv.nl/?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1552465011-b4e21bf6e79a%3Fixlib%3Drb-4.0.3%26auto%3Dformat%26fit%3Dcrop%26w%3D800%26q%3D85&w=400&fit=cover&output=jpg&q=85" data-direct="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=85" alt="Thailand islands" width="400" height="260" loading="lazy" decoding="async" referrerpolicy="no-referrer" class="ko-img h-24 w-full rounded-lg object-cover ring-1 ring-slate-200 sm:h-28" />
-            <img src="https://wsrv.nl/?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1555881400-74d7acaacd8b%3Fixlib%3Drb-4.0.3%26auto%3Dformat%26fit%3Dcrop%26w%3D800%26q%3D85&w=400&fit=cover&output=jpg&q=85" data-direct="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=85" alt="Andaman coast" width="400" height="260" loading="lazy" decoding="async" referrerpolicy="no-referrer" class="ko-img h-24 w-full rounded-lg object-cover ring-1 ring-slate-200 sm:h-28" />
-            <img src="https://wsrv.nl/?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1537996194471-e657df975ab4%3Fixlib%3Drb-4.0.3%26auto%3Dformat%26fit%3Dcrop%26w%3D800%26q%3D85&w=400&fit=cover&output=jpg&q=85" data-direct="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=85" alt="Bangkok skyline" width="400" height="260" loading="lazy" decoding="async" referrerpolicy="no-referrer" class="ko-img h-24 w-full rounded-lg object-cover ring-1 ring-slate-200 sm:h-28" />
+            <img
+              src="https://wsrv.nl/?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1552465011-b4e21bf6e79a%3Fixlib%3Drb-4.0.3%26auto%3Dformat%26fit%3Dcrop%26w%3D800%26q%3D85&w=400&fit=cover&output=jpg&q=85"
+              data-direct="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=85"
+              alt="Thailand islands" width="400" height="260" loading="lazy" decoding="async"
+              referrerpolicy="no-referrer"
+              class="ko-img h-24 w-full rounded-lg object-cover ring-1 ring-slate-200 sm:h-28" />
+            <img
+              src="https://wsrv.nl/?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1555881400-74d7acaacd8b%3Fixlib%3Drb-4.0.3%26auto%3Dformat%26fit%3Dcrop%26w%3D800%26q%3D85&w=400&fit=cover&output=jpg&q=85"
+              data-direct="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=85"
+              alt="Andaman coast" width="400" height="260" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+              class="ko-img h-24 w-full rounded-lg object-cover ring-1 ring-slate-200 sm:h-28" />
+            <img
+              src="https://wsrv.nl/?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1537996194471-e657df975ab4%3Fixlib%3Drb-4.0.3%26auto%3Dformat%26fit%3Dcrop%26w%3D800%26q%3D85&w=400&fit=cover&output=jpg&q=85"
+              data-direct="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=85"
+              alt="Bangkok skyline" width="400" height="260" loading="lazy" decoding="async"
+              referrerpolicy="no-referrer"
+              class="ko-img h-24 w-full rounded-lg object-cover ring-1 ring-slate-200 sm:h-28" />
           </div>
           <!-- <div class="h-28 w-full max-w-md rounded-xl bg-gradient-to-br from-slate-100 to-slate-200/80 ring-1 ring-slate-200/80" aria-hidden="true" title="Form fields placeholder"></div>
           <p class="w-full max-w-md text-center text-xs text-slate-500 sm:text-right">Enquiry fields slot — layout reserved for your CRM / lead form.</p> -->
@@ -351,79 +446,218 @@
   </section>
 
   <!-- About Thailand -->
-<section 
-  class="relative px-4 py-20 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat"
-  style="background-image: url('https://img.freepik.com/free-vector/realistic-travel-background-with-elements_52683-77784.jpg?semt=ais_hybrid&w=740&q=80');"
->
+  <section class="relative px-4 py-20 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat"
+    style="background-image: url('https://img.freepik.com/free-vector/realistic-travel-background-with-elements_52683-77784.jpg?semt=ais_hybrid&w=740&q=80');">
 
-  <!-- Overlay -->
-  <div class="absolute inset-0 bg-black/30"></div>
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/30"></div>
 
-  <!-- Content Card -->
-  <div class="relative mx-auto max-w-[800px] rounded-3xl border border-white/80 bg-white/85 p-8 shadow-card backdrop-blur-md sm:p-10">
-    <h2 class="font-display text-center text-3xl font-extrabold text-navy sm:text-4xl">
-      About Thailand
-    </h2>
-    <p class="mt-6 text-base leading-8 text-slate-700 sm:text-lg">
-      Thailand is one of Asia's most loved travel destinations, blending tropical beaches, vibrant cities, and rich culture into one unforgettable holiday. From the lively streets and rooftop views of 
-      <span class="font-semibold text-navy">Bangkok</span> to the turquoise waters of 
-      <span class="font-semibold text-navy">Phuket</span>, every stop offers a unique experience for couples, families, and groups.
-    </p>
-    <p class="mt-4 text-base leading-8 text-slate-700 sm:text-lg">
-      Explore island escapes, local markets, Buddhist temples, nightlife, and adventure all in one itinerary. Enjoy the scenic cliffs and longtail boat tours of 
-      <span class="font-semibold text-navy">Krabi</span>, or head north to discover mountains, cafes, and heritage charm in 
-      <span class="font-semibold text-navy">Chiang Mai</span>.
-    </p>
-    <p class="mt-4 text-base leading-8 text-slate-700 sm:text-lg">
-      With smooth connectivity, excellent hospitality, and experiences for every budget, Thailand remains a top destination for travelers looking for comfort, excitement, and memorable moments.
-    </p>
-  </div>
-</section>
+    <!-- Content Card -->
+    <div
+      class="relative mx-auto max-w-[800px] rounded-3xl border border-white/80 bg-white/85 p-8 shadow-card backdrop-blur-md sm:p-10">
+      <h2 class="font-display text-center text-3xl font-extrabold text-navy sm:text-4xl">
+        About Thailand
+      </h2>
+      <p class="mt-6 text-base leading-8 text-slate-700 sm:text-lg">
+        Thailand is one of Asia's most loved travel destinations, blending tropical beaches, vibrant cities, and rich
+        culture into one unforgettable holiday. From the lively streets and rooftop views of
+        <span class="font-semibold text-navy">Bangkok</span> to the turquoise waters of
+        <span class="font-semibold text-navy">Phuket</span>, every stop offers a unique experience for couples,
+        families, and groups.
+      </p>
+      <p class="mt-4 text-base leading-8 text-slate-700 sm:text-lg">
+        Explore island escapes, local markets, Buddhist temples, nightlife, and adventure all in one itinerary. Enjoy
+        the scenic cliffs and longtail boat tours of
+        <span class="font-semibold text-navy">Krabi</span>, or head north to discover mountains, cafes, and heritage
+        charm in
+        <span class="font-semibold text-navy">Chiang Mai</span>.
+      </p>
+      <p class="mt-4 text-base leading-8 text-slate-700 sm:text-lg">
+        With smooth connectivity, excellent hospitality, and experiences for every budget, Thailand remains a top
+        destination for travelers looking for comfort, excitement, and memorable moments.
+      </p>
+    </div>
+  </section>
 
   <!-- Trust bar -->
-  <section class="travel-art-bg-soft border-y border-slate-200 section-gap">
-    <div class="mx-auto grid max-w-7xl grid-cols-2 gap-4 px-4 sm:grid-cols-4 sm:gap-5 sm:px-6 lg:px-8">
-      <div class="flex items-center gap-3 rounded-xl border border-slate-100 bg-white px-4 py-3.5 shadow-sm">
-        <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-navy/10 text-navy">
-          <i data-lucide="sliders-horizontal" class="h-5 w-5"></i>
-        </span>
-        <span class="text-sm font-semibold text-navy">100% Customized</span>
+  <!-- Premium Trust Bar -->
+  <section class="travel-art-bg-soft border-y border-slate-200 py-10 overflow-hidden">
+
+    <div class="mx-auto grid max-w-7xl grid-cols-1 gap-5 px-4 sm:grid-cols-2 lg:grid-cols-4 sm:px-6 lg:px-8">
+
+      <!-- Card 1 -->
+      <div
+        class="group relative overflow-hidden rounded-3xl bg-white/90 p-5 shadow-lg ring-1 ring-slate-200 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:ring-ocean/30">
+
+        <!-- Glow -->
+        <div
+          class="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-blue-100 blur-3xl transition duration-500 group-hover:scale-150">
+        </div>
+
+        <div class="relative flex items-center gap-4">
+
+          <div
+            class="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#0a192f] to-[#003459] text-white shadow-lg transition duration-500 group-hover:rotate-6 group-hover:scale-110">
+            <i data-lucide="wand-sparkles" class="h-8 w-8"></i>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold text-navy">
+              100% Customized Packages
+            </h3>
+
+            <p class="mt-1 text-sm text-slate-500">
+              Tailor-made itineraries
+            </p>
+          </div>
+
+        </div>
       </div>
-      <div class="flex items-center gap-3 rounded-xl border border-slate-100 bg-white px-4 py-3.5 shadow-sm">
-        <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-navy/10 text-navy">
-          <i data-lucide="calendar-x" class="h-5 w-5"></i>
-        </span>
-        <span class="text-sm font-semibold text-navy">Free Cancellation</span>
+
+      <!-- Card 2 -->
+      <div
+        class="group relative overflow-hidden rounded-3xl bg-white/90 p-5 shadow-lg ring-1 ring-slate-200 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:ring-red-300">
+
+        <div
+          class="absolute -left-10 -bottom-10 h-28 w-28 rounded-full bg-red-100 blur-3xl transition duration-500 group-hover:scale-150">
+        </div>
+
+        <div class="relative flex items-center gap-4">
+
+          <div
+            class="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-red-500 to-pink-500 text-white shadow-lg transition duration-500 group-hover:rotate-6 group-hover:scale-110">
+            <i data-lucide="calendar-x-2" class="h-8 w-8"></i>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold text-navy">
+              Free Cancellation
+            </h3>
+
+            <p class="mt-1 text-sm text-slate-500">
+              Flexible booking support
+            </p>
+          </div>
+
+        </div>
       </div>
-      <div class="flex items-center gap-3 rounded-xl border border-slate-100 bg-white px-4 py-3.5 shadow-sm">
-        <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-navy/10 text-navy">
-          <i data-lucide="shield-check" class="h-5 w-5"></i>
-        </span>
-        <span class="text-sm font-semibold text-navy">Free Insurance</span>
+
+      <!-- Card 3 -->
+      <div
+        class="group relative overflow-hidden rounded-3xl bg-white/90 p-5 shadow-lg ring-1 ring-slate-200 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:ring-emerald-300">
+
+        <div
+          class="absolute -right-10 -bottom-10 h-28 w-28 rounded-full bg-emerald-100 blur-3xl transition duration-500 group-hover:scale-150">
+        </div>
+
+        <div class="relative flex items-center gap-4">
+
+          <div
+            class="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-green-500 text-white shadow-lg transition duration-500 group-hover:rotate-6 group-hover:scale-110">
+            <i data-lucide="shield-check" class="h-8 w-8"></i>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold text-navy">
+              Free Insurance
+            </h3>
+
+            <p class="mt-1 text-sm text-slate-500">
+              Safe & secure travel
+            </p>
+          </div>
+
+        </div>
       </div>
-      <div class="flex items-center gap-3 rounded-xl border border-slate-100 bg-white px-4 py-3.5 shadow-sm">
-        <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-navy/10 text-navy">
-          <i data-lucide="credit-card" class="h-5 w-5"></i>
-        </span>
-        <span class="text-sm font-semibold text-navy">No Cost EMI</span>
+      <!-- Card 4 -->
+      <div
+        class="group relative overflow-hidden rounded-3xl bg-white/90 p-5 shadow-lg ring-1 ring-slate-200 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:ring-yellow-300">
+
+        <div
+          class="absolute -left-10 -top-10 h-28 w-28 rounded-full bg-yellow-100 blur-3xl transition duration-500 group-hover:scale-150">
+        </div>
+
+        <div class="relative flex items-center gap-4">
+
+          <div
+            class="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-yellow-400 to-orange-400 text-white shadow-lg transition duration-500 group-hover:rotate-6 group-hover:scale-110">
+            <i data-lucide="credit-card" class="h-8 w-8"></i>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold text-navy">
+              No Cost EMI
+            </h3>
+
+            <p class="mt-1 text-sm text-slate-500">
+              Easy payment options
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Flight banner -->
+  <section class="px-4 pb-12 sm:px-6 lg:px-8">
+    <div class="relative mx-auto max-w-7xl overflow-hidden rounded-2xl shadow-xl">
+      <img
+        src="https://wsrv.nl/?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1436491865332-7a61a109cc05%3Fixlib%3Drb-4.0.3%26auto%3Dformat%26fit%3Dcrop%26w%3D1920%26q%3D85&w=1600&fit=cover&output=jpg&q=80"
+        data-direct="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=85"
+        alt="" width="1600" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+        class="ko-img absolute inset-0 h-full w-full object-cover opacity-40" />
+      <div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 to-[#003b70]/98"></div>
+      <div
+        class="relative flex flex-col gap-8 px-6 py-10 sm:px-10 md:flex-row md:items-center md:justify-between md:py-12">
+        <div class="flex items-center gap-6">
+          <div
+            class="hidden h-28 w-28 shrink-0 items-center justify-center rounded-full bg-white/12 p-6 text-accent ring-2 ring-white/15 md:flex">
+            <i data-lucide="plane" class="h-14 w-14"></i>
+          </div>
+          <div>
+            <h2 class="font-display text-2xl font-extrabold text-white sm:text-3xl">Flight Booking</h2>
+            <p class="mt-2 max-w-xl text-sm leading-relaxed text-white/90 sm:text-base">
+              Lock fares to Bangkok, Phuket &amp; beyond. Bundle flights with your land package for one itinerary, one
+              support line.
+            </p>
+          </div>
+        </div>
+        <a href="https://wa.me/919599260057" target="_blank" rel="noopener noreferrer"
+          class="btn-travel-warm inline-flex w-full shrink-0 items-center justify-center rounded-xl px-8 py-3.5 text-base font-bold text-white shadow-lg transition hover:scale-105 hover:brightness-105 md:w-auto">
+          Book Now
+        </a>
       </div>
     </div>
   </section>
 
   <!-- Packages -->
-  <section class="px-4 section-gap sm:px-6 lg:px-8">
+  <section class="px-4 pt-0 pb-12 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-7xl">
       <div class="mb-8 text-center reveal">
         <h2 class="font-display mt-2 text-3xl font-extrabold text-navy sm:text-4xl">Popular Thailand Packages</h2>
+<<<<<<< HEAD:index.html
+=======
+        <p class="mx-auto mt-3 max-w-3xl text-lg font-medium leading-relaxed text-slate-600">
+          Expert-crafted Thailand packages for
+          <span class="font-semibold text-navy">Couples</span>,
+          <span class="font-semibold text-navy">Friends</span>,
+          <span class="font-semibold text-navy">Families</span> &
+          <span class="font-semibold text-navy">Honeymoon Travelers</span>
+        </p>
+>>>>>>> 474e72d (Updated UI sections and travel guide):kingdom-of-holidays-thailand.html
       </div>
-      <div id="package-filters" class="glass-panel reveal mb-8 flex flex-wrap justify-center gap-3 rounded-2xl p-4 shadow-card"></div>
+      <div id="package-filters"
+        class="glass-panel reveal mb-8 flex flex-wrap justify-center gap-3 rounded-2xl p-4 shadow-card"></div>
       <div class="package-container reveal">
         <div class="relative">
-          <button id="slider-prev" type="button" class="btn-travel-gradient absolute -left-3 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full text-white shadow-premium transition hover:brightness-110 md:flex">
+          <button id="slider-prev" type="button"
+            class="btn-travel-gradient absolute -left-3 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full text-white shadow-premium transition hover:brightness-110 md:flex">
             <i data-lucide="chevron-left" class="h-5 w-5"></i>
           </button>
           <div id="package-grid" class="slider-track flex gap-5 overflow-x-auto rounded-2xl"></div>
-          <button id="slider-next" type="button" class="btn-travel-gradient absolute -right-3 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full text-white shadow-premium transition hover:brightness-110 md:flex">
+          <button id="slider-next" type="button"
+            class="btn-travel-gradient absolute -right-3 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full text-white shadow-premium transition hover:brightness-110 md:flex">
             <i data-lucide="chevron-right" class="h-5 w-5"></i>
           </button>
         </div>
@@ -431,67 +665,42 @@
     </div>
   </section>
 
-  <!-- Flight banner -->
-  <section class="px-4 pb-12 sm:px-6 lg:px-8">
-    <div class="relative mx-auto max-w-7xl overflow-hidden rounded-2xl shadow-xl">
-      <img
-        src="https://wsrv.nl/?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1436491865332-7a61a109cc05%3Fixlib%3Drb-4.0.3%26auto%3Dformat%26fit%3Dcrop%26w%3D1920%26q%3D85&w=1600&fit=cover&output=jpg&q=80"
-        data-direct="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=85"
-        alt=""
-        width="1600"
-        height="400"
-        loading="lazy"
-        decoding="async"
-        referrerpolicy="no-referrer"
-        class="ko-img absolute inset-0 h-full w-full object-cover opacity-40"
-      />
-      <div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 to-[#003b70]/98"></div>
-      <div class="relative flex flex-col gap-8 px-6 py-10 sm:px-10 md:flex-row md:items-center md:justify-between md:py-12">
-        <div class="flex items-center gap-6">
-          <div class="hidden h-28 w-28 shrink-0 items-center justify-center rounded-full bg-white/12 p-6 text-accent ring-2 ring-white/15 md:flex">
-            <i data-lucide="plane" class="h-14 w-14"></i>
-          </div>
-          <div>
-            <h2 class="font-display text-2xl font-extrabold text-white sm:text-3xl">Flight Booking</h2>
-            <p class="mt-2 max-w-xl text-sm leading-relaxed text-white/90 sm:text-base">
-              Lock fares to Bangkok, Phuket &amp; beyond. Bundle flights with your land package for one itinerary, one support line.
-            </p>
-          </div>
-        </div>
-        <button type="button" class="btn-travel-warm w-full shrink-0 rounded-xl px-8 py-3.5 text-base font-bold text-white shadow-lg transition hover:brightness-105 md:w-auto">
-          Book Now
-        </button>
-      </div>
-    </div>
-  </section>
-
   <!-- How it works -->
-  <section class="travel-art-bg-soft border-t border-slate-200 px-4 section-gap sm:px-6 lg:px-8">
+  <section class="travel-art-bg-soft border-t border-slate-200 px-4 pt-2 pb-14 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-7xl">
       <h2 class="font-display reveal text-center text-3xl font-extrabold text-navy sm:text-4xl">How It Works</h2>
-      <p class="reveal mx-auto mt-3 max-w-2xl text-center text-slate-600">Three simple steps from idea to confirmed holiday.</p>
+      <p class="reveal mx-auto mt-3 max-w-2xl text-center text-slate-600">Three simple steps from idea to confirmed
+        holiday.</p>
       <div class="relative mt-12 grid gap-6 md:grid-cols-3 md:gap-8">
-        <div class="pointer-events-none absolute left-[17%] right-[17%] top-12 hidden border-t-2 border-dashed border-ocean/25 md:block"></div>
+        <div
+          class="pointer-events-none absolute left-[17%] right-[17%] top-12 hidden border-t-2 border-dashed border-ocean/25 md:block">
+        </div>
         <div class="how-card reveal rounded-3xl p-6 text-center sm:p-7">
-          <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-navy to-ocean text-accent shadow-lg">
+          <div
+            class="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-navy to-ocean text-accent shadow-lg">
             <i data-lucide="map-pinned" class="h-9 w-9"></i>
           </div>
           <h3 class="font-display mt-5 text-lg font-bold text-navy">Enquire</h3>
-          <p class="mt-2 text-sm leading-relaxed text-slate-600">Share dates, budget and departure city. We instantly shape options around your style of travel.</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">Share dates, budget and departure city. We instantly
+            shape options around your style of travel.</p>
         </div>
         <div class="how-card reveal rounded-3xl p-6 text-center sm:p-7">
-          <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-navy to-ocean text-accent shadow-lg">
+          <div
+            class="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-navy to-ocean text-accent shadow-lg">
             <i data-lucide="plane-takeoff" class="h-9 w-9"></i>
           </div>
           <h3 class="font-display mt-5 text-lg font-bold text-navy">Consult</h3>
-          <p class="mt-2 text-sm leading-relaxed text-slate-600">Travel experts refine hotels, flights, transfers and activities until the plan fits perfectly.</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">Travel experts refine hotels, flights, transfers and
+            activities until the plan fits perfectly.</p>
         </div>
         <div class="how-card reveal rounded-3xl p-6 text-center sm:p-7">
-          <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-navy to-ocean text-accent shadow-lg">
+          <div
+            class="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-navy to-ocean text-accent shadow-lg">
             <i data-lucide="luggage" class="h-9 w-9"></i>
           </div>
           <h3 class="font-display mt-5 text-lg font-bold text-navy">Receive Confirmation</h3>
-          <p class="mt-2 text-sm leading-relaxed text-slate-600">Get your vouchers and full support line. Pack your bags and start your Thailand journey.</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">Get your vouchers and full support line. Pack your bags
+            and start your Thailand journey.</p>
         </div>
       </div>
     </div>
@@ -509,9 +718,12 @@
       <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
         <article class="glass-panel reveal rounded-[16px] p-3 shadow-card">
           <div class="video-frame-wrap">
-            <a class="video-preview-link" href="https://youtube.com/shorts/r688vaWFybY" target="_blank" rel="noopener noreferrer" aria-label="Watch Thailand short 1 on YouTube">
-              <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/r688vaWFybY/hqdefault.jpg" alt="Thailand short preview 1" />
-              <span class="play-chip absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold text-white">
+            <a class="video-preview-link" href="https://youtube.com/shorts/r688vaWFybY" target="_blank"
+              rel="noopener noreferrer" aria-label="Watch Thailand short 1 on YouTube">
+              <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/r688vaWFybY/hqdefault.jpg"
+                alt="Thailand short preview 1" />
+              <span
+                class="play-chip absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold text-white">
                 <i data-lucide="play-circle" class="h-3.5 w-3.5"></i> Watch on YouTube
               </span>
             </a>
@@ -519,9 +731,12 @@
         </article>
         <article class="glass-panel reveal rounded-[16px] p-3 shadow-card">
           <div class="video-frame-wrap">
-            <a class="video-preview-link" href="https://youtube.com/shorts/Xjei3zKWXUg" target="_blank" rel="noopener noreferrer" aria-label="Watch Thailand short 2 on YouTube">
-              <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/Xjei3zKWXUg/hqdefault.jpg" alt="Thailand short preview 2" />
-              <span class="play-chip absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold text-white">
+            <a class="video-preview-link" href="https://youtube.com/shorts/Xjei3zKWXUg" target="_blank"
+              rel="noopener noreferrer" aria-label="Watch Thailand short 2 on YouTube">
+              <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/Xjei3zKWXUg/hqdefault.jpg"
+                alt="Thailand short preview 2" />
+              <span
+                class="play-chip absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold text-white">
                 <i data-lucide="play-circle" class="h-3.5 w-3.5"></i> Watch on YouTube
               </span>
             </a>
@@ -529,9 +744,12 @@
         </article>
         <article class="glass-panel reveal rounded-[16px] p-3 shadow-card">
           <div class="video-frame-wrap">
-            <a class="video-preview-link" href="https://youtube.com/shorts/1uOIlGF_6sc" target="_blank" rel="noopener noreferrer" aria-label="Watch Thailand short 3 on YouTube">
-              <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/1uOIlGF_6sc/hqdefault.jpg" alt="Thailand short preview 3" />
-              <span class="play-chip absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold text-white">
+            <a class="video-preview-link" href="https://youtube.com/shorts/1uOIlGF_6sc" target="_blank"
+              rel="noopener noreferrer" aria-label="Watch Thailand short 3 on YouTube">
+              <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/1uOIlGF_6sc/hqdefault.jpg"
+                alt="Thailand short preview 3" />
+              <span
+                class="play-chip absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold text-white">
                 <i data-lucide="play-circle" class="h-3.5 w-3.5"></i> Watch on YouTube
               </span>
             </a>
@@ -539,9 +757,12 @@
         </article>
         <article class="glass-panel reveal rounded-[16px] p-3 shadow-card">
           <div class="video-frame-wrap">
-            <a class="video-preview-link" href="https://youtube.com/shorts/klrsmf5y0Lw" target="_blank" rel="noopener noreferrer" aria-label="Watch Thailand short 4 on YouTube">
-              <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/klrsmf5y0Lw/hqdefault.jpg" alt="Thailand short preview 4" />
-              <span class="play-chip absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold text-white">
+            <a class="video-preview-link" href="https://youtube.com/shorts/klrsmf5y0Lw" target="_blank"
+              rel="noopener noreferrer" aria-label="Watch Thailand short 4 on YouTube">
+              <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/klrsmf5y0Lw/hqdefault.jpg"
+                alt="Thailand short preview 4" />
+              <span
+                class="play-chip absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold text-white">
                 <i data-lucide="play-circle" class="h-3.5 w-3.5"></i> Watch on YouTube
               </span>
             </a>
@@ -550,9 +771,75 @@
       </div>
     </div>
   </section>
+  <!-- Our Brands -->
+  <section class="relative overflow-hidden px-4 py-10 sm:px-6 lg:px-8">
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50"></div>
+    <div class="relative mx-auto max-w-6xl">
+      <div class="mb-8 text-center">
+        <h2 class="font-display text-3xl font-extrabold text-navy sm:text-4xl">
+          Our Brands
+        </h2>
+        <p class="mx-auto mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
+          Trusted travel ventures delivering seamless holiday experiences
+          across Thailand & Andaman.
+        </p>
+      </div>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div
+          class="group overflow-hidden rounded-[1.7rem] border border-blue-200/70 bg-white shadow-[0_10px_40px_rgba(0,70,255,0.08)] transition duration-500 hover:-translate-y-2 hover:border-blue-400 hover:shadow-[0_20px_60px_rgba(0,90,255,0.18)]">
+          <div class="overflow-hidden bg-gradient-to-br from-blue-50 to-white p-3">
+            <img src="./our brands/explore andaman.png" alt="Explore Andaman"
+              class="h-[240px] w-full object-contain transition duration-700 group-hover:scale-105" />
+          </div>
+          <div class="px-5 pb-5 text-center">
+            <h3 class="text-xl font-extrabold text-navy">
+              Explore Andaman
+            </h3>
+            <p class="mt-3 text-sm font-semibold leading-6 text-slate-700">
+              📍 Sri Vijaya Puram,<br>
+              Andaman & Nicobar Islands
+            </p>
+          </div>
+        </div>
+        <div
+          class="group overflow-hidden rounded-[1.7rem] border border-blue-200/70 bg-white shadow-[0_10px_40px_rgba(0,70,255,0.08)] transition duration-500 hover:-translate-y-2 hover:border-blue-400 hover:shadow-[0_20px_60px_rgba(0,90,255,0.18)]">
 
+          <div class="overflow-hidden bg-gradient-to-br from-blue-50 to-white p-3">
+            <img src="./our brands/tour4holidays.PNG" alt="Tour4Holidays"
+              class="h-[240px] w-full object-contain transition duration-700 group-hover:scale-105" />
+          </div>
+          <div class="px-5 pb-5 text-center">
+            <h3 class="text-xl font-extrabold text-navy">
+              Tour4Holidays
+            </h3>
+            <p class="mt-3 text-sm font-semibold leading-6 text-slate-700">
+              📍 Chonburi,<br>
+              Pattaya - Thailand
+            </p>
+          </div>
+        </div>
+        <div
+          class="group overflow-hidden rounded-[1.7rem] border border-blue-200/70 bg-white shadow-[0_10px_40px_rgba(0,70,255,0.08)] transition duration-500 hover:-translate-y-2 hover:border-blue-400 hover:shadow-[0_20px_60px_rgba(0,90,255,0.18)]">
+          <div class="overflow-hidden bg-gradient-to-br from-blue-50 to-white p-3">
+            <img src="./our brands/license.jpg" alt="Licensed Operations"
+              class="h-[240px] w-full object-contain transition duration-700 group-hover:scale-105" />
+          </div>
+          <div class="px-5 pb-5 text-center">
+            <h3 class="text-xl font-extrabold text-navy">
+              Licensed Operations
+            </h3>
+            <p class="mt-3 text-sm font-semibold leading-6 text-slate-700">
+              📍 Pattaya - Thailand<br>
+              Verified Tourism License
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Stats -->
-  <section class="relative overflow-hidden bg-gradient-to-br from-navy via-ocean to-navy px-4 section-gap text-white sm:px-6 lg:px-8">
+  <section
+    class="relative overflow-hidden bg-gradient-to-br from-navy via-ocean to-navy px-4 section-gap text-white sm:px-6 lg:px-8">
     <div class="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-accent/10 blur-3xl"></div>
     <div class="pointer-events-none absolute -bottom-24 -left-24 h-64 w-64 rounded-full bg-white/10 blur-3xl"></div>
     <div class="relative mx-auto grid max-w-7xl gap-10 text-center sm:grid-cols-3">
@@ -574,11 +861,229 @@
         <span class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-accent">
           <i data-lucide="award" class="h-6 w-6"></i>
         </span>
-        <p class="font-display text-xl font-bold leading-snug text-white sm:text-2xl md:text-3xl">Best for<br class="hidden sm:block" /> Thailand</p>
+        <p class="font-display text-xl font-bold leading-snug text-white sm:text-2xl md:text-3xl">Best for<br
+            class="hidden sm:block" /> Thailand</p>
         <p class="mt-2 text-sm text-white/75">Specialist-crafted routes &amp; local tie-ups</p>
       </div>
     </div>
   </section>
+
+  <!-- Thailand Info Hub -->
+  <section class="relative overflow-hidden px-4 py-10 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl">
+      <!-- Heading -->
+      <div class="mb-8 text-center">
+        <h2 class="font-display text-3xl font-extrabold text-navy sm:text-4xl">
+          Thailand Travel Guide
+        </h2>
+      </div>
+      <!-- Main Section -->
+      <div
+        class="grid h-[78vh] overflow-hidden rounded-[2rem] border border-blue-100 bg-white shadow-2xl lg:grid-cols-[290px_1fr]">
+        <!-- LEFT MENU -->
+        <div class="border-r border-slate-200 bg-slate-50 p-4">
+          <div class="space-y-3">
+            <!-- Item -->
+            <button onclick="changeGuide('./drive/CARRY ON.jpeg', this)"
+              class="guide-btn active-guide flex w-full items-center gap-3 rounded-2xl bg-gradient-to-r from-[#022b57] to-[#003b70] px-4 py-3 text-left text-white shadow-lg transition hover:scale-[1.01]">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-white/10 text-xl">
+                ✈️
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">Carry On</h3>
+                <p class="text-sm text-white/80">
+                  Thailand essentials
+                </p>
+              </div>
+            </button>
+            <!-- Item -->
+            <button onclick="changeGuide('./drive/FAQ MAP.png', this)"
+              class="guide-btn flex w-full items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 text-xl">
+                ❓
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-navy">
+                  Thailand FAQs
+                </h3>
+                <p class="text-sm text-slate-500">
+                  Common questions
+                </p>
+              </div>
+            </button>
+            <!-- Item -->
+            <button onclick="changeGuide('./drive/HAPPY CLIENTS.png', this)"
+              class="guide-btn flex w-full items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-pink-100 text-xl">
+                ❤️
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-navy">
+                  Happy Clients
+                </h3>
+                <p class="text-sm text-slate-500">
+                  Traveler experiences
+                </p>
+              </div>
+            </button>
+            <!-- Item -->
+            <button onclick="changeGuide('./drive/HOTELS .jpeg', this)"
+              class="guide-btn flex w-full items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-yellow-100 text-xl">
+                🏨
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-navy">
+                  Hotels
+                </h3>
+                <p class="text-sm text-slate-500">
+                  Stay recommendations
+                </p>
+              </div>
+            </button>
+            <!-- Item -->
+            <button onclick="changeGuide('./drive/RESTAURANTS.jpeg', this)"
+              class="guide-btn flex w-full items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-100 text-xl">
+                🍜
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-navy">
+                  Restaurants
+                </h3>
+                <p class="text-sm text-slate-500">
+                  Food & dining spots
+                </p>
+              </div>
+            </button>
+            <!-- Item -->
+            <button onclick="changeGuide('./drive/SIGHTSEEN.jpeg', this)"
+              class="guide-btn flex w-full items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-green-100 text-xl">
+                📸
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-navy">
+                  Sightseeing
+                </h3>
+                <p class="text-sm text-slate-500">
+                  Must-visit places
+                </p>
+              </div>
+            </button>
+            <!-- Item -->
+            <button onclick="changeGuide('./drive/TIPS N TRICKS.jpeg', this)"
+              class="guide-btn flex w-full items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-100 text-xl">
+                💡
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-navy">
+                  Tips & Tricks
+                </h3>
+                <p class="text-sm text-slate-500">
+                  Smart Thailand hacks
+                </p>
+              </div>
+            </button>
+          </div>
+        </div>
+        <!-- RIGHT IMAGE -->
+        <!-- RIGHT IMAGE -->
+        <div
+          class="relative flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#dbeafe] via-[#eff6ff] to-[#bfdbfe] p-4">
+
+          <!-- Top Blue Glow -->
+          <div class="absolute -top-24 right-0 h-72 w-72 rounded-full bg-blue-400/20 blur-3xl"></div>
+
+          <!-- Bottom Cyan Glow -->
+          <div class="absolute -bottom-24 left-0 h-72 w-72 rounded-full bg-cyan-300/20 blur-3xl"></div>
+
+          <!-- Center Glow -->
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.65),transparent_60%)]">
+          </div>
+
+          <!-- Image Container -->
+          <div
+            class="relative z-10 flex h-full w-full items-center justify-center overflow-hidden rounded-[2rem] border border-white/40 bg-white/20 backdrop-blur-xl shadow-[0_20px_60px_rgba(37,99,235,0.18)]">
+
+            <img id="guide-preview" src="./drive/CARRY ON.jpeg" alt="Thailand Guide"
+              class="relative z-10 h-auto max-h-[66vh] w-auto max-w-full rounded-[1.5rem] border border-white/60 object-contain shadow-2xl transition duration-500 hover:scale-[1.01]" />
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+
+    function changeGuide(imageSrc, button) {
+
+      const image = document.getElementById("guide-preview");
+
+      image.style.opacity = "0";
+
+      setTimeout(() => {
+        image.src = imageSrc;
+        image.style.opacity = "1";
+      }, 200);
+
+      // RESET ALL BUTTONS
+      document.querySelectorAll(".guide-btn").forEach(btn => {
+
+        btn.classList.remove(
+          "bg-gradient-to-r",
+          "from-[#022b57]",
+          "to-[#003b70]",
+          "text-white",
+          "shadow-lg",
+          "border-0"
+        );
+
+        btn.classList.add(
+          "bg-white",
+          "border",
+          "border-slate-200"
+        );
+
+        // RESET TEXT COLORS
+        btn.querySelector("h3").classList.remove("text-white");
+        btn.querySelector("p").classList.remove("text-white/80");
+
+        btn.querySelector("h3").classList.add("text-navy");
+        btn.querySelector("p").classList.add("text-slate-500");
+
+      });
+
+      // ACTIVE BUTTON
+      button.classList.remove(
+        "bg-white",
+        "border",
+        "border-slate-200"
+      );
+
+      button.classList.add(
+        "bg-gradient-to-r",
+        "from-[#022b57]",
+        "to-[#003b70]",
+        "text-white",
+        "shadow-lg",
+        "border-0"
+      );
+
+      // ACTIVE TEXT COLORS
+      button.querySelector("h3").classList.remove("text-navy");
+      button.querySelector("p").classList.remove("text-slate-500");
+
+      button.querySelector("h3").classList.add("text-white");
+      button.querySelector("p").classList.add("text-white/80");
+
+    }
+
+  </script>
+
+
 
   <!-- Gallery -->
   <section class="px-4 section-gap sm:px-6 lg:px-8">
@@ -586,25 +1091,53 @@
       <div class="text-center">
         <!-- <p class="text-xs font-bold uppercase tracking-wider text-ocean">Inspiration</p> -->
         <h2 class="font-display mt-2 text-3xl font-extrabold text-navy sm:text-4xl">Best Snaps</h2>
-        <p class="mx-auto mt-3 max-w-2xl text-slate-600">Real textures of Thailand — limestone bays, neon nights, island blues.</p>
+        <p class="mx-auto mt-3 max-w-2xl text-slate-600">Real textures of Thailand — limestone bays, neon nights, island
+          blues.</p>
       </div>
 
-      <div class="mt-10 grid snap-x snap-mandatory auto-cols-[85vw] grid-flow-col gap-4 overflow-x-auto pb-4 sm:auto-cols-auto sm:grid-flow-row sm:grid-cols-2 sm:overflow-visible lg:grid-cols-4">
+      <div
+        class="mt-10 grid snap-x snap-mandatory auto-cols-[85vw] grid-flow-col gap-4 overflow-x-auto pb-4 sm:auto-cols-auto sm:grid-flow-row sm:grid-cols-2 sm:overflow-visible lg:grid-cols-4">
         <figure class="group relative snap-center overflow-hidden rounded-xl shadow-md sm:snap-align-none">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1553603227-2358aabe821e%3Fixlib%3Drb-4.0.3%26auto%3Dformat%26fit%3Dcrop%26w%3D1200%26q%3D85&w=900&fit=cover&output=jpg&q=85" data-direct="https://images.unsplash.com/photo-1553603227-2358aabe821e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=85" alt="Railay limestone cliffs" width="900" height="640" loading="lazy" decoding="async" referrerpolicy="no-referrer" class="ko-img h-56 w-full object-cover transition duration-500 group-hover:scale-105 lg:h-64" />
-          <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/90 to-transparent p-4 pt-12 text-left text-sm font-semibold text-white opacity-0 transition group-hover:opacity-100">Railay &amp; limestone views</figcaption>
+          <img
+            src="https://wsrv.nl/?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1553603227-2358aabe821e%3Fixlib%3Drb-4.0.3%26auto%3Dformat%26fit%3Dcrop%26w%3D1200%26q%3D85&w=900&fit=cover&output=jpg&q=85"
+            data-direct="https://images.unsplash.com/photo-1553603227-2358aabe821e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=85"
+            alt="Railay limestone cliffs" width="900" height="640" loading="lazy" decoding="async"
+            referrerpolicy="no-referrer"
+            class="ko-img h-56 w-full object-cover transition duration-500 group-hover:scale-105 lg:h-64" />
+          <figcaption
+            class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/90 to-transparent p-4 pt-12 text-left text-sm font-semibold text-white opacity-0 transition group-hover:opacity-100">
+            Railay &amp; limestone views</figcaption>
         </figure>
         <figure class="group relative snap-center overflow-hidden rounded-xl shadow-md sm:snap-align-none">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1520250497591-112f2f40a3f4%3Fixlib%3Drb-4.0.3%26auto%3Dformat%26fit%3Dcrop%26w%3D1200%26q%3D85&w=900&fit=cover&output=jpg&q=85" data-direct="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=85" alt="Beach resort pool at dusk" width="900" height="640" loading="lazy" decoding="async" referrerpolicy="no-referrer" class="ko-img h-56 w-full object-cover transition duration-500 group-hover:scale-105 lg:h-64" />
-          <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/90 to-transparent p-4 pt-12 text-left text-sm font-semibold text-white opacity-0 transition group-hover:opacity-100">Resort stays &amp; sunsets</figcaption>
+          <img
+            src="https://wsrv.nl/?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1520250497591-112f2f40a3f4%3Fixlib%3Drb-4.0.3%26auto%3Dformat%26fit%3Dcrop%26w%3D1200%26q%3D85&w=900&fit=cover&output=jpg&q=85"
+            data-direct="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=85"
+            alt="Beach resort pool at dusk" width="900" height="640" loading="lazy" decoding="async"
+            referrerpolicy="no-referrer"
+            class="ko-img h-56 w-full object-cover transition duration-500 group-hover:scale-105 lg:h-64" />
+          <figcaption
+            class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/90 to-transparent p-4 pt-12 text-left text-sm font-semibold text-white opacity-0 transition group-hover:opacity-100">
+            Resort stays &amp; sunsets</figcaption>
         </figure>
         <figure class="group relative snap-center overflow-hidden rounded-xl shadow-md sm:snap-align-none">
-          <img src="img/islandhoping.jpg" data-direct="https://images.unsplash.com/photo-1565009331971-3957b6c2a2a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=85" alt="Thai street food spread" width="900" height="640" loading="lazy" decoding="async" referrerpolicy="no-referrer" class="ko-img h-56 w-full object-cover transition duration-500 group-hover:scale-105 lg:h-64"/>
-          <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/90 to-transparent p-4 pt-12 text-left text-sm font-semibold text-white opacity-0 transition group-hover:opacity-100">Island hopping &amp; longtails</figcaption>
+          <img src="img/islandhoping.jpg"
+            data-direct="https://images.unsplash.com/photo-1565009331971-3957b6c2a2a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=85"
+            alt="Thai street food spread" width="900" height="640" loading="lazy" decoding="async"
+            referrerpolicy="no-referrer"
+            class="ko-img h-56 w-full object-cover transition duration-500 group-hover:scale-105 lg:h-64" />
+          <figcaption
+            class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/90 to-transparent p-4 pt-12 text-left text-sm font-semibold text-white opacity-0 transition group-hover:opacity-100">
+            Island hopping &amp; longtails</figcaption>
         </figure>
         <figure class="group relative snap-center overflow-hidden rounded-xl shadow-md sm:snap-align-none">
-          <img src="img/nightmarket.jpg" data-direct="https://images.unsplash.com/photo-1565009331971-3957b6c2a2a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=85" alt="Thai street food spread" width="900" height="640" loading="lazy" decoding="async" referrerpolicy="no-referrer" class="ko-img h-56 w-full object-cover transition duration-500 group-hover:scale-105 lg:h-64" />
-          <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/90 to-transparent p-4 pt-12 text-left text-sm font-semibold text-white opacity-0 transition group-hover:opacity-100">Night markets &amp; flavours</figcaption>
+          <img src="img/nightmarket.jpg"
+            data-direct="https://images.unsplash.com/photo-1565009331971-3957b6c2a2a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=85"
+            alt="Thai street food spread" width="900" height="640" loading="lazy" decoding="async"
+            referrerpolicy="no-referrer"
+            class="ko-img h-56 w-full object-cover transition duration-500 group-hover:scale-105 lg:h-64" />
+          <figcaption
+            class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/90 to-transparent p-4 pt-12 text-left text-sm font-semibold text-white opacity-0 transition group-hover:opacity-100">
+            Night markets &amp; flavours</figcaption>
         </figure>
       </div>
     </div>
@@ -615,15 +1148,8 @@
     <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 sm:flex-row">
       <div class="flex items-center gap-3 text-center sm:text-left">
         <div class="relative h-10 w-10 overflow-hidden rounded-lg ring-1 ring-ocean/20">
-          <img
-            src="img/koh logo.jpeg"
-            alt="Kingdom of Holidays logo"
-            width="40"
-            height="40"
-            loading="lazy"
-            decoding="async"
-            class="h-full w-full object-cover"
-          />
+          <img src="img/koh logo.jpeg" alt="Kingdom of Holidays logo" width="40" height="40" loading="lazy"
+            decoding="async" class="h-full w-full object-cover" />
         </div>
         <div>
           <p class="font-display font-bold text-navy">Kingdom of Holidays</p>
@@ -638,9 +1164,75 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/919599260057" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg ring-4 ring-white transition hover:scale-105 hover:shadow-xl" aria-label="Chat on WhatsApp">
+  <!-- <a href="https://wa.me/919599260057" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg ring-4 ring-white transition hover:scale-105 hover:shadow-xl" aria-label="Chat on WhatsApp">
     <i data-lucide="message-circle" class="h-7 w-7"></i>
-  </a>
+  </a> -->
+  <!-- Floating WhatsApp Button -->
+  <button id="whatsappToggle"
+    class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl transition hover:scale-105">
+    <i data-lucide="message-circle" class="h-7 w-7"></i>
+  </button>
+
+  <!-- WhatsApp Popup -->
+  <div id="whatsappPopup"
+    class="fixed bottom-24 right-6 z-50 hidden w-[290px] overflow-hidden rounded-[2rem] bg-white shadow-2xl">
+
+    <!-- Header -->
+    <div class="bg-[#25D366] px-5 py-4 text-white">
+      <div class="flex items-center gap-3">
+
+        <div class="flex h-14 w-14 items-center justify-center rounded-full bg-white/20">
+          <i data-lucide="message-circle" class="h-8 w-8"></i>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold leading-tight">
+            Kingdom of Holidays
+          </h3>
+
+          <p class="text-xs text-white/90">
+            Thailand Travel Experts
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="bg-[#f4f5f7] p-4">
+
+      <!-- Message 1 -->
+      <div class="mb-3 rounded-2xl bg-white px-4 py-3 text-sm text-slate-700 shadow">
+        👋 Hello! Welcome to Kingdom of Holidays
+      </div>
+
+      <!-- Message 2 -->
+      <div class="rounded-2xl bg-white px-4 py-4 text-sm leading-7 text-slate-700 shadow">
+        ✈️ Our travel experts are live & available for chat.
+        <br><br>
+
+        Get best Thailand packages, flight deals &
+        customized itineraries instantly.
+      </div>
+
+      <!-- Button -->
+      <a href="https://wa.me/919599260057" target="_blank" rel="noopener noreferrer"
+        class="mt-4 flex w-full items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-4 py-3 text-lg font-semibold text-white transition hover:scale-[1.02]">
+        <i data-lucide="message-circle" class="h-6 w-6"></i>
+        Start WhatsApp Chat
+      </a>
+
+    </div>
+  </div>
+
+  <script>
+    const whatsappToggle = document.getElementById("whatsappToggle");
+    const whatsappPopup = document.getElementById("whatsappPopup");
+
+    whatsappToggle.addEventListener("click", () => {
+      whatsappPopup.classList.toggle("hidden");
+    });
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.454.0/dist/umd/lucide.min.js"></script>
   <script>
@@ -687,61 +1279,61 @@
       ];
 
       var packageImagesByCategory = {
-  '3N|4D': [
-    '3-nights/1.png',
-    '3-nights/2.png',
-    '3-nights/3.png',
-    '3-nights/4.png',
-    '3-nights/5.png',
-    '3-nights/6.png'
-  ],
-   '4N|5D': [
-    '4-nights/13.png',
-    '4-nights/14.png',
-    '4-nights/15.png',
-    '4-nights/16.png'
-  ],
-  '5N|6D': [
-    '5-nights/7.png',
-    '5-nights/8.png',
-    '5-nights/9.png',
-    '5-nights/10.png',
-    '5-nights/11.png',
-    '5-nights/12.png'
-  ],
-  '6N|7D': [
-    '6-nights/23.png',
-    '6-nights/24.png',
-    '6-nights/25.png',
-    '6-nights/26.png',
-    '6-nights/27.png',
-    '6-nights/28.png'
-  ],
-  '7N|8D': [
-    '7-nights/34.png',
-    '7-nights/35.png',
-    '7-nights/36.png',
-    '7-nights/37.png',
-    '7-nights/38.png'
-  ],
-  '8N|9D': [
-    '8-nights/29.png',
-    '8-nights/30.png',
-    '8-nights/31.png',
-    '8-nights/32.png',
-    '8-nights/33.png'
-  ],
-  '9N|10D': [
-    '9-nights/17.png',
-    '9-nights/18.png',
-    '9-nights/19.png'
-  ],
-  '10N|11D': [
-    '10-nights/20.png',
-    '10-nights/21.png',
-    '10-nights/22.png'
-  ]
-};
+        '3N|4D': [
+          '3-nights/1.png',
+          '3-nights/2.png',
+          '3-nights/3.png',
+          '3-nights/4.png',
+          '3-nights/5.png',
+          '3-nights/6.png'
+        ],
+        '4N|5D': [
+          '4-nights/13.png',
+          '4-nights/14.png',
+          '4-nights/15.png',
+          '4-nights/16.png'
+        ],
+        '5N|6D': [
+          '5-nights/7.png',
+          '5-nights/8.png',
+          '5-nights/9.png',
+          '5-nights/10.png',
+          '5-nights/11.png',
+          '5-nights/12.png'
+        ],
+        '6N|7D': [
+          '6-nights/23.png',
+          '6-nights/24.png',
+          '6-nights/25.png',
+          '6-nights/26.png',
+          '6-nights/27.png',
+          '6-nights/28.png'
+        ],
+        '7N|8D': [
+          '7-nights/34.png',
+          '7-nights/35.png',
+          '7-nights/36.png',
+          '7-nights/37.png',
+          '7-nights/38.png'
+        ],
+        '8N|9D': [
+          '8-nights/29.png',
+          '8-nights/30.png',
+          '8-nights/31.png',
+          '8-nights/32.png',
+          '8-nights/33.png'
+        ],
+        '9N|10D': [
+          '9-nights/17.png',
+          '9-nights/18.png',
+          '9-nights/19.png'
+        ],
+        '10N|11D': [
+          '10-nights/20.png',
+          '10-nights/21.png',
+          '10-nights/22.png'
+        ]
+      };
 
       var filterRoot = document.getElementById('package-filters');
       var packageGrid = document.getElementById('package-grid');
@@ -758,25 +1350,52 @@
       }
 
       function packageCardTemplate(src, label, idx) {
-  return (
-    '<article class="group relative min-w-[82%] overflow-hidden rounded-2xl border border-white/50 bg-white shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-xl sm:min-w-[45%] lg:min-w-[30%]">' +
-    
-    ((idx + 1) % 2 === 0
-      ? '<span class="sale-badge absolute left-3 top-3 z-10 rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-white shadow-md">Live Sale</span>'
-      : '') +
+        return (
+          '<article class="group relative min-w-[82%] overflow-hidden rounded-2xl border border-white/50 bg-white shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-xl sm:min-w-[45%] lg:min-w-[30%]">' +
 
-    // 🔥 FIXED CONTAINER
-    '<div class="relative aspect-[3/4] overflow-hidden">' +
+          ((idx + 1) % 2 === 0
+            ? `
+  
+  <!-- SALE RIBBON -->
+  <div class="absolute left-0 right-0 top-0 z-20 flex items-center justify-between bg-gradient-to-r from-red-600 via-pink-500 to-orange-400 px-4 py-2 shadow-lg">
 
-    // 🔥 BACK TO COVER (but controlled)
-    '<img src="' + src + '" alt="Thailand package ' + (idx + 1) + '" loading="lazy" decoding="async" class="ko-img h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" />' +
+    <!-- Left -->
+    <div class="flex items-center gap-2">
 
-    '<div class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/85 to-transparent p-4 text-sm font-semibold text-white">' + label + ' itinerary</div>' +
+      <div class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20 text-sm">
+        🔥
+      </div>
 
-    '</div>' +
-    '</article>'
-  );
-}
+      <span class="text-xs font-extrabold uppercase tracking-[1px] text-white">
+        Limited Time Sale
+      </span>
+
+    </div>
+
+    <!-- Right -->
+    <div class="rounded-full bg-black/25 px-3 py-1 text-xs font-bold tracking-wider text-yellow-200 backdrop-blur-md">
+
+      ⏰ <span class="countdown-timer">24:00:00</span>
+
+    </div>
+
+  </div>
+
+  `
+            : '') +
+
+          // 🔥 FIXED CONTAINER
+          '<div class="relative aspect-[3/4] overflow-hidden">' +
+
+          // 🔥 BACK TO COVER (but controlled)
+          '<img src="' + src + '" alt="Thailand package ' + (idx + 1) + '" loading="lazy" decoding="async" class="ko-img h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" />' +
+
+          '<div class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/85 to-transparent p-4 text-sm font-semibold text-white">' + label + ' itinerary</div>' +
+
+          '</div>' +
+          '</article>'
+        );
+      }
 
       function renderFilters() {
         if (!filterRoot) return;
@@ -852,8 +1471,38 @@
       } else {
         revealItems.forEach(function (item) { item.classList.add('is-visible'); });
       }
+      // 24 Hour Countdown Timer
+      function startCountdown() {
 
+        const timers = document.querySelectorAll('.countdown-timer');
+
+        timers.forEach((timer) => {
+
+          let totalSeconds = 24 * 60 * 60;
+
+          setInterval(() => {
+
+            totalSeconds--;
+
+            if (totalSeconds <= 0) {
+              totalSeconds = 24 * 60 * 60;
+            }
+
+            const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
+            const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+            const seconds = String(totalSeconds % 60).padStart(2, '0');
+
+            timer.textContent = `${hours}:${minutes}:${seconds}`;
+
+          }, 1000);
+
+        });
+
+      }
+
+      setTimeout(startCountdown, 600);
     })();
   </script>
 </body>
+
 </html>
