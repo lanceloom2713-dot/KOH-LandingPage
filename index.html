@@ -231,44 +231,80 @@
 
   <!-- Header -->
   <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 shadow-sm backdrop-blur-md">
-    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-      <a href="#" class="flex shrink-0 items-center gap-3">
-        <div
-          class="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl bg-white shadow-md ring-2 ring-ocean/20 sm:h-12 sm:w-12">
-          <img src="img/koh logo.jpeg" alt="Kingdom of Holidays logo" width="48" height="48" loading="eager"
-            decoding="async" class="h-full w-full object-cover"
-            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-          <span
-            class="hidden h-full w-full items-center justify-center bg-gradient-to-br from-navy to-[#003d7a] text-sm font-black text-white">KH</span>
-        </div>
-        <div class="leading-tight">
-          <span class="font-display block text-sm font-bold tracking-tight text-navy sm:text-base">Kingdom of
-            Holidays</span>
-          <span class="hidden text-xs font-medium text-slate-500 sm:block">Thailand · Visa · Flights · Stays</span>
-        </div>
-      </a>
-      <div class="flex flex-wrap items-center justify-end gap-2 sm:gap-3">
-        <div
-          class="hidden rounded-xl border border-slate-200 bg-white px-3 py-2 text-[11px] font-medium text-slate-600 shadow-sm lg:block">
-          <div class="flex items-center gap-3">
-            <span class="inline-flex items-center gap-1 font-semibold text-slate-800">
-              <i data-lucide="phone" class="h-3.5 w-3.5 text-ocean"></i>
-              9599260057 | 9971600663
-            </span>
+  <div class="mx-auto flex max-w-[95rem] items-center justify-between gap-3 px-4 py-3">
 
-            <span class="inline-flex items-center gap-1 font-semibold text-slate-800">
-              <i data-lucide="mail" class="h-3.5 w-3.5 text-ocean"></i>
-              info@kingdomofholidays.com
-            </span>
-          </div>
-        </div>
-        <a href="https://wa.me/919599260057"
-          class="btn-travel-gradient ripple-btn inline-flex items-center rounded-full px-4 py-2 text-xs font-bold text-white shadow-md ring-1 ring-white/10 transition hover:brightness-110 sm:px-5 sm:text-sm">
-          Send Us Quotes
-        </a>
+    <!-- LOGO -->
+    <a href="#" class="ml-8 flex shrink-0 items-center gap-3">
+      <div
+        class="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl bg-white shadow-md ring-2 ring-ocean/20">
+        <img src="img/koh logo.jpeg" alt="Kingdom of Holidays logo" width="48" height="48" loading="eager"
+          decoding="async" class="h-full w-full object-cover"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <span
+          class="hidden h-full w-full items-center justify-center bg-gradient-to-br from-navy to-[#003d7a] text-sm font-black text-white">
+          KH
+        </span>
       </div>
+
+      <div class="leading-tight">
+        <span class="font-display block text-sm font-bold tracking-tight text-navy">
+          Kingdom of Holidays
+        </span>
+
+        <span class="text-xs font-medium text-slate-500">
+          Thailand · Visa · Flights · Stays
+        </span>
+      </div>
+    </a>
+
+    <!-- RIGHT SIDE -->
+    <div class="flex items-center gap-3">
+
+      <!-- INFO BOX -->
+      <div
+        class="rounded-xl border border-slate-200 bg-white px-4 py-2 text-[10px] font-medium text-slate-600 shadow-sm">
+
+        <div class="flex items-center gap-2 whitespace-nowrap">
+
+          <span class="inline-flex items-center gap-1 font-semibold text-slate-800">
+            <i data-lucide="map-pin" class="h-3.5 w-3.5 text-ocean"></i>
+            Delhi-NCR-GZB
+          </span>
+
+          <span class="text-slate-300">|</span>
+
+          <span class="font-semibold text-slate-800">
+            Sri Vijaya Puram, Andaman & Nicobar Islands
+          </span>
+
+          <span class="text-slate-300">|</span>
+
+          <span class="font-semibold text-slate-800">
+            Chonburi, Pattaya - Thailand
+          </span>
+
+          <span class="text-slate-300">|</span>
+
+          <span class="inline-flex items-center gap-1 font-semibold text-slate-800">
+            <i data-lucide="phone" class="h-3.5 w-3.5 text-ocean"></i>
+            9599260057 | 9971600663
+          </span>
+
+          <span class="inline-flex items-center gap-1 font-semibold text-slate-800">
+            <i data-lucide="mail" class="h-3.5 w-3.5 text-ocean"></i>
+            info@kingdomofholidays.com
+          </span>
+
+        </div>
+      </div>
+      <a href="https://wa.me/919599260057"
+        class="btn-travel-gradient ripple-btn inline-flex items-center rounded-full px-5 py-2 text-sm font-bold text-white shadow-md ring-1 ring-white/10 transition hover:brightness-110">
+        Send Us Quotes
+      </a>
+
     </div>
-  </header>
+  </div>
+</header>
   <div
     class="bg-gradient-to-r from-navy via-ocean to-navy px-4 py-2 text-center text-xs font-semibold tracking-wide text-accent sm:text-sm">
     TAN License Number - MRTR09551D | IATTE /20-21/2157
@@ -557,65 +593,7 @@
     </svg>
   </div>
 
-  <!-- Lead capture placeholder -->
-  <section id="quote-space" class="relative px-4 pb-6 pt-2 sm:px-6 lg:px-8">
-    <div
-      class="mx-auto max-w-7xl overflow-hidden rounded-2xl border-2 border-dashed border-ocean/25 bg-white shadow-card">
-      <div class="grid gap-8 p-6 sm:grid-cols-2 sm:items-center sm:p-10">
-        <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-ocean">Fast response</p>
-          <h2 class="font-display mt-1 text-xl font-bold text-navy sm:text-2xl">Get your personalized quote</h2>
-          <p class="mt-2 text-sm leading-relaxed text-slate-600">
-            Share travel dates &amp; budget — Our Thailand desk replies with options tailored to your city &amp;
-            preferences.
-          </p>
-          <p class="mt-3 inline-flex items-center gap-2 text-xs font-semibold text-navy">
-            <i data-lucide="clock" class="h-4 w-4 text-ocean"></i>
-            Avg. callback under 15 minutes (business hours)
-          </p>
-          <div
-            class="mt-4 inline-flex items-center gap-3 rounded-full border border-yellow-300 bg-gradient-to-r from-yellow-100 to-amber-50 px-4 py-2 shadow-sm">
-
-            <div class="flex h-8 w-8 items-center justify-center rounded-full bg-yellow-400 text-white shadow">
-              <i data-lucide="clock-3" class="h-4 w-4"></i>
-            </div>
-
-            <p class="text-sm font-bold text-yellow-900">
-              Avg. Callback Under
-              <span class="text-red-500">15 Minutes</span>
-              <span class="font-medium text-yellow-800">
-                (Business hours)
-              </span>
-            </p>
-
-          </div>
-        </div>
-        <div class="flex flex-col gap-3 sm:items-end">
-          <div class="grid w-full max-w-md grid-cols-3 gap-2">
-            <img
-              src="https://wsrv.nl/?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1552465011-b4e21bf6e79a%3Fixlib%3Drb-4.0.3%26auto%3Dformat%26fit%3Dcrop%26w%3D800%26q%3D85&w=400&fit=cover&output=jpg&q=85"
-              data-direct="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=85"
-              alt="Thailand islands" width="400" height="260" loading="lazy" decoding="async"
-              referrerpolicy="no-referrer"
-              class="ko-img h-24 w-full rounded-lg object-cover ring-1 ring-slate-200 sm:h-28" />
-            <img
-              src="https://wsrv.nl/?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1555881400-74d7acaacd8b%3Fixlib%3Drb-4.0.3%26auto%3Dformat%26fit%3Dcrop%26w%3D800%26q%3D85&w=400&fit=cover&output=jpg&q=85"
-              data-direct="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=85"
-              alt="Andaman coast" width="400" height="260" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-              class="ko-img h-24 w-full rounded-lg object-cover ring-1 ring-slate-200 sm:h-28" />
-            <img
-              src="https://wsrv.nl/?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1537996194471-e657df975ab4%3Fixlib%3Drb-4.0.3%26auto%3Dformat%26fit%3Dcrop%26w%3D800%26q%3D85&w=400&fit=cover&output=jpg&q=85"
-              data-direct="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=85"
-              alt="Bangkok skyline" width="400" height="260" loading="lazy" decoding="async"
-              referrerpolicy="no-referrer"
-              class="ko-img h-24 w-full rounded-lg object-cover ring-1 ring-slate-200 sm:h-28" />
-          </div>
-          <!-- <div class="h-28 w-full max-w-md rounded-xl bg-gradient-to-br from-slate-100 to-slate-200/80 ring-1 ring-slate-200/80" aria-hidden="true" title="Form fields placeholder"></div>
-          <p class="w-full max-w-md text-center text-xs text-slate-500 sm:text-right">Enquiry fields slot — layout reserved for your CRM / lead form.</p> -->
-        </div>
-      </div>
-    </div>
-  </section>
+ 
 
   <!-- About Thailand -->
   <section class="relative px-4 py-20 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat"
@@ -650,37 +628,6 @@
       </p>
     </div>
   </section>
-  <!-- Packages -->
-  <section class="px-4 pt-10 pb-12 sm:px-6 lg:px-8">
-    <div class="mx-auto max-w-7xl">
-      <div class="mb-8 text-center reveal">
-        <h2 class="font-display mt-2 text-3xl font-extrabold text-navy sm:text-4xl">Popular Thailand Packages</h2>
-        <p class="mx-auto mt-3 max-w-3xl text-lg font-medium leading-relaxed text-slate-600">
-          Expert-crafted Thailand packages for
-          <span class="font-semibold text-navy">Couples</span>,
-          <span class="font-semibold text-navy">Friends</span>,
-          <span class="font-semibold text-navy">Families</span> &
-          <span class="font-semibold text-navy">Honeymoon Travelers</span>
-        </p>
-      </div>
-      <div id="package-filters"
-        class="glass-panel reveal mb-8 flex flex-wrap justify-center gap-3 rounded-2xl p-4 shadow-card"></div>
-      <div class="package-container reveal">
-        <div class="relative">
-          <button id="slider-prev" type="button"
-            class="btn-travel-gradient absolute -left-3 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full text-white shadow-premium transition hover:brightness-110 md:flex">
-            <i data-lucide="chevron-left" class="h-5 w-5"></i>
-          </button>
-          <div id="package-grid" class="slider-track flex gap-5 overflow-x-auto rounded-2xl"></div>
-          <button id="slider-next" type="button"
-            class="btn-travel-gradient absolute -right-3 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full text-white shadow-premium transition hover:brightness-110 md:flex">
-            <i data-lucide="chevron-right" class="h-5 w-5"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Trust bar -->
   <!-- Premium Trust Bar -->
   <section class="travel-art-bg-soft border-y border-slate-200 py-10 overflow-hidden">
@@ -801,6 +748,37 @@
 
     </div>
   </section>
+  <!-- Packages -->
+  <section class="px-4 pt-10 pb-12 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl">
+      <div class="mb-8 text-center reveal">
+        <h2 class="font-display mt-2 text-3xl font-extrabold text-navy sm:text-4xl">Popular Thailand Packages</h2>
+        <p class="mx-auto mt-3 max-w-3xl text-lg font-medium leading-relaxed text-slate-600">
+          Expert-crafted Thailand packages for
+          <span class="font-semibold text-navy">Couples</span>,
+          <span class="font-semibold text-navy">Friends</span>,
+          <span class="font-semibold text-navy">Families</span> &
+          <span class="font-semibold text-navy">Honeymoon Travelers</span>
+        </p>
+      </div>
+      <div id="package-filters"
+        class="glass-panel reveal mb-8 flex flex-wrap justify-center gap-3 rounded-2xl p-4 shadow-card"></div>
+      <div class="package-container reveal">
+        <div class="relative">
+          <button id="slider-prev" type="button"
+            class="btn-travel-gradient absolute -left-3 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full text-white shadow-premium transition hover:brightness-110 md:flex">
+            <i data-lucide="chevron-left" class="h-5 w-5"></i>
+          </button>
+          <div id="package-grid" class="slider-track flex gap-5 overflow-x-auto rounded-2xl"></div>
+          <button id="slider-next" type="button"
+            class="btn-travel-gradient absolute -right-3 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full text-white shadow-premium transition hover:brightness-110 md:flex">
+            <i data-lucide="chevron-right" class="h-5 w-5"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Flight banner -->
   <section class="px-4 pb-12 sm:px-6 lg:px-8">
     <div class="relative mx-auto max-w-7xl overflow-hidden rounded-2xl shadow-xl">
@@ -916,15 +894,15 @@
 
       <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
 
-        <!-- Video 1 -->
+         <!-- Video 3 -->
         <article class="glass-panel reveal rounded-[16px] p-3 shadow-card">
           <div class="video-frame-wrap">
 
-            <a class="video-preview-link" href="https://youtube.com/shorts/1Q3CgBYl8vk?si=MH3CigskUYJgKtdT"
-              target="_blank" rel="noopener noreferrer">
+            <a class="video-preview-link" href="https://youtu.be/9X-78TH8nAQ?si=ETmeInz8_rzMP6VS" target="_blank"
+              rel="noopener noreferrer">
 
-              <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/1Q3CgBYl8vk/hqdefault.jpg"
-                alt="Customer arrival preview 1" />
+              <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/9X-78TH8nAQ/hqdefault.jpg"
+                alt="Customer arrival preview 3" />
 
               <span
                 class="play-chip absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold text-white">
@@ -935,6 +913,7 @@
             </a>
           </div>
         </article>
+
 
         <!-- Video 2 -->
         <article class="glass-panel reveal rounded-[16px] p-3 shadow-card">
@@ -956,15 +935,15 @@
           </div>
         </article>
 
-        <!-- Video 3 -->
+          <!-- Video 1 -->
         <article class="glass-panel reveal rounded-[16px] p-3 shadow-card">
           <div class="video-frame-wrap">
 
-            <a class="video-preview-link" href="https://youtu.be/9X-78TH8nAQ?si=ETmeInz8_rzMP6VS" target="_blank"
-              rel="noopener noreferrer">
+            <a class="video-preview-link" href="https://youtube.com/shorts/1Q3CgBYl8vk?si=MH3CigskUYJgKtdT"
+              target="_blank" rel="noopener noreferrer">
 
-              <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/9X-78TH8nAQ/hqdefault.jpg"
-                alt="Customer arrival preview 3" />
+              <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/1Q3CgBYl8vk/hqdefault.jpg"
+                alt="Customer arrival preview 1" />
 
               <span
                 class="play-chip absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold text-white">
@@ -975,7 +954,6 @@
             </a>
           </div>
         </article>
-
         <!-- Video 4 -->
         <article class="glass-panel reveal rounded-[16px] p-3 shadow-card">
           <div class="video-frame-wrap">
@@ -1023,10 +1001,6 @@
             <h3 class="text-xl font-extrabold text-navy">
               Kingdom of Holidays
             </h3>
-            <p class="mt-3 text-sm font-semibold leading-6 text-slate-700">
-              📍 Delhi-NCR-Ghaziabad<br>
-              Ahmedabad-Gujarat
-            </p>
           </div>
         </div>
         <div
@@ -1039,10 +1013,6 @@
             <h3 class="text-xl font-extrabold text-navy">
               Explore Andaman
             </h3>
-            <p class="mt-3 text-sm font-semibold leading-6 text-slate-700">
-              📍 Sri Vijaya Puram,<br>
-              Andaman & Nicobar Islands
-            </p>
           </div>
         </div>
         <div
@@ -1056,10 +1026,6 @@
             <h3 class="text-xl font-extrabold text-navy">
               Tour4Holidays
             </h3>
-            <p class="mt-3 text-sm font-semibold leading-6 text-slate-700">
-              📍 Chonburi,<br>
-              Pattaya - Thailand
-            </p>
           </div>
         </div>
       </div>
@@ -1497,7 +1463,7 @@
       </p>
 
       <p class="text-[10px] font-semibold text-red-500">
-        under 15 mins
+        Under 15 mins
       </p>
     </div>
 
