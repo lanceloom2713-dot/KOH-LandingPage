@@ -390,16 +390,11 @@
           <p class="text-xs font-bold uppercase tracking-wider text-ocean">Fast response</p>
           <h2 class="font-display mt-1 text-xl font-bold text-navy sm:text-2xl">Get your personalized quote</h2>
           <p class="mt-2 text-sm leading-relaxed text-slate-600">
-<<<<<<< HEAD:index.html
             Share travel dates &amp; budget — Our Thailand desk replies with options tailored to your city &amp; preferences.
           </p>
           <p class="mt-3 inline-flex items-center gap-2 text-xs font-semibold text-navy">
             <i data-lucide="clock" class="h-4 w-4 text-ocean"></i>
             Avg. callback under 15 minutes (business hours)
-=======
-            Share travel dates &amp; budget — our Thailand desk replies with options tailored to your city &amp;
-            preferences.
->>>>>>> 474e72d (Updated UI sections and travel guide):kingdom-of-holidays-thailand.html
           </p>
           <div
             class="mt-4 inline-flex items-center gap-3 rounded-full border border-yellow-300 bg-gradient-to-r from-yellow-100 to-amber-50 px-4 py-2 shadow-sm">
@@ -636,8 +631,6 @@
     <div class="mx-auto max-w-7xl">
       <div class="mb-8 text-center reveal">
         <h2 class="font-display mt-2 text-3xl font-extrabold text-navy sm:text-4xl">Popular Thailand Packages</h2>
-<<<<<<< HEAD:index.html
-=======
         <p class="mx-auto mt-3 max-w-3xl text-lg font-medium leading-relaxed text-slate-600">
           Expert-crafted Thailand packages for
           <span class="font-semibold text-navy">Couples</span>,
@@ -645,7 +638,6 @@
           <span class="font-semibold text-navy">Families</span> &
           <span class="font-semibold text-navy">Honeymoon Travelers</span>
         </p>
->>>>>>> 474e72d (Updated UI sections and travel guide):kingdom-of-holidays-thailand.html
       </div>
       <div id="package-filters"
         class="glass-panel reveal mb-8 flex flex-wrap justify-center gap-3 rounded-2xl p-4 shadow-card"></div>
@@ -1238,7 +1230,7 @@
   <script>
     (function () {
       if (typeof lucide !== 'undefined') lucide.createIcons();
-
+      startCountdown();
       var placeholder =
         'data:image/svg+xml,' +
         encodeURIComponent(
@@ -1471,37 +1463,57 @@
       } else {
         revealItems.forEach(function (item) { item.classList.add('is-visible'); });
       }
-      // 24 Hour Countdown Timer
-      function startCountdown() {
+  // =========================
+// LIVE SALE COUNTDOWN
+// =========================
 
-        const timers = document.querySelectorAll('.countdown-timer');
+function startCountdown() {
 
-        timers.forEach((timer) => {
+  let totalSeconds = 24 * 60 * 60;
 
-          let totalSeconds = 24 * 60 * 60;
+  function updateAllTimers() {
 
-          setInterval(() => {
+    const timers = document.querySelectorAll('.countdown-timer');
 
-            totalSeconds--;
+    const hours = String(
+      Math.floor(totalSeconds / 3600)
+    ).padStart(2, '0');
 
-            if (totalSeconds <= 0) {
-              totalSeconds = 24 * 60 * 60;
-            }
+    const minutes = String(
+      Math.floor((totalSeconds % 3600) / 60)
+    ).padStart(2, '0');
 
-            const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
-            const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
-            const seconds = String(totalSeconds % 60).padStart(2, '0');
+    const seconds = String(
+      totalSeconds % 60
+    ).padStart(2, '0');
 
-            timer.textContent = `${hours}:${minutes}:${seconds}`;
+    const finalTime = `${hours}:${minutes}:${seconds}`;
 
-          }, 1000);
+    timers.forEach((timer) => {
+      timer.textContent = finalTime;
+    });
 
-        });
+    totalSeconds--;
 
-      }
+    if (totalSeconds < 0) {
+      totalSeconds = 24 * 60 * 60;
+    }
 
-      setTimeout(startCountdown, 600);
-    })();
+  }
+
+  // run instantly
+  updateAllTimers();
+
+  // run every second
+  setInterval(updateAllTimers, 1000);
+
+}
+
+// START AFTER PAGE LOAD
+window.addEventListener('load', () => {
+  setTimeout(startCountdown, 1000);
+});
+})();
   </script>
 </body>
 
