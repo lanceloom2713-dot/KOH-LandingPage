@@ -15,6 +15,8 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
     rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -909,13 +911,13 @@
     <div class="mx-auto max-w-7xl">
       <div class="mb-8 text-center reveal">
         <h2 class="font-display mt-2 text-3xl font-extrabold text-navy sm:text-4xl">Popular Thailand Packages</h2>
-        <p class="mx-auto mt-3 max-w-3xl text-lg font-medium leading-relaxed text-slate-600">
-          Expert-crafted Thailand packages for
-          <span class="font-semibold text-navy">Couples</span>,
-          <span class="font-semibold text-navy">Friends</span>,
-          <span class="font-semibold text-navy">Families</span> &
-          <span class="font-semibold text-navy">Honeymoon Travelers</span>
-        </p>
+        <p class="fire-text mx-auto mt-3 max-w-3xl text-base font-bold leading-relaxed">
+  Expert-crafted Thailand packages for
+  <span>Couples</span>,
+  <span>Friends</span>,
+  <span>Families</span> &
+  <span>Honeymoon Travelers</span>
+</p>
       </div>
       <div id="package-filters"
         class="glass-panel reveal mb-8 flex flex-wrap justify-center gap-3 rounded-2xl p-4 shadow-card"></div>
@@ -936,165 +938,192 @@
   </section>
   <!-- TOP ATTRACTIONS -->
   <!-- TOP ATTRACTIONS -->
-  <section class="pt-2 pb-16 bg-gradient-to-b from-white to-slate-50 overflow-hidden">
+<section class="pt-2 pb-16 bg-gradient-to-b from-white to-slate-50 overflow-hidden">
 
-    <div class="mx-auto max-w-7xl">
+  <div class="mx-auto max-w-7xl">
 
-      <!-- HEADING -->
-      <div class="mb-8 text-center reveal">
+    <!-- HEADING -->
+    <div class="mb-8 text-center reveal">
 
-        <h2 class="font-display mt-2 text-3xl font-extrabold text-navy sm:text-4xl">
-          Top Attractions
-        </h2>
+      <h2 class="font-display mt-2 text-3xl font-extrabold text-navy sm:text-4xl">
+        Top Attractions
+      </h2>
 
-      </div>
+    </div>
 
-      <!-- SLIDER -->
-      <div class="relative overflow-hidden">
+    <!-- SLIDER -->
+    <div class="relative overflow-hidden w-full">
 
+      <div id="topAttractionSlider"
+        class="top-attractions-slider flex gap-4">
 
-        <div id="topAttractionSlider" class="top-attractions-slider flex gap-4 w-max">
+        <!-- CARD 1 -->
+        <div class="card">
+          <img src="./destinations/b1.png" />
+        </div>
 
-          <!-- CARD 1 -->
-          <div
-            class="min-w-[220px] md:min-w-[260px] h-[280px] md:h-[320px] rounded-[20px] overflow-hidden relative group shadow-xl">
+        <!-- CARD 2 -->
+        <div class="card">
+          <img src="./destinations/b2.png" />
+        </div>
 
-            <img src="./destinations/b1.png" class="w-full h-full object-cover group-hover:scale-110 duration-700" />
+        <!-- CARD 3 -->
+        <div class="card">
+          <img src="./destinations/b3.png" />
+        </div>
 
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+        <!-- CARD 4 -->
+        <div class="card">
+          <img src="./destinations/p1.png" />
+        </div>
 
-          </div>
+        <!-- CARD 5 -->
+        <div class="card">
+          <img src="./destinations/p2.png" />
+        </div>
 
-          <!-- CARD 2 -->
-          <div
-            class="min-w-[220px] md:min-w-[260px] h-[280px] md:h-[320px] rounded-[20px] overflow-hidden relative group shadow-xl">
+        <!-- CARD 6 -->
+        <div class="card">
+          <img src="./destinations/p3.png" />
+        </div>
 
-            <img src="./destinations/b2.png" class="w-full h-full object-cover group-hover:scale-110 duration-700" />
+        <!-- CARD 7 -->
+        <div class="card">
+          <img src="./destinations/ph1.jpeg" />
+        </div>
 
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+        <!-- CARD 8 -->
+        <div class="card">
+          <img src="./destinations/ph2.png" />
+        </div>
 
-          </div>
+        <!-- CARD 9 -->
+        <div class="card">
+          <img src="./destinations/ph3.png" />
+        </div>
 
-          <!-- CARD 3 -->
-          <div
-            class="min-w-[220px] md:min-w-[260px] h-[280px] md:h-[320px] rounded-[20px] overflow-hidden relative group shadow-xl">
+        <!-- DUPLICATE FOR INFINITE LOOP -->
 
-            <img src="./destinations/b3.png" class="w-full h-full object-cover group-hover:scale-110 duration-700" />
+        <div class="card">
+          <img src="./destinations/b1.png" />
+        </div>
 
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+        <div class="card">
+          <img src="./destinations/b2.png" />
+        </div>
 
-          </div>
+        <div class="card">
+          <img src="./destinations/b3.png" />
+        </div>
 
-          <!-- DUPLICATE FOR INFINITE LOOP -->
+        <div class="card">
+          <img src="./destinations/p1.png" />
+        </div>
 
-          <!-- CARD 4 -->
-          <div
-            class="min-w-[220px] md:min-w-[260px] h-[280px] md:h-[320px] rounded-[20px] overflow-hidden relative group shadow-xl">
+        <div class="card">
+          <img src="./destinations/p2.png" />
+        </div>
 
-            <img src="./destinations/p1.png" class="w-full h-full object-cover group-hover:scale-110 duration-700" />
+        <div class="card">
+          <img src="./destinations/p3.png" />
+        </div>
 
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+        <div class="card">
+          <img src="./destinations/ph1.jpeg" />
+        </div>
 
+        <div class="card">
+          <img src="./destinations/ph2.png" />
+        </div>
 
-          </div>
-
-          <!-- CARD 5 -->
-          <div
-            class="min-w-[220px] md:min-w-[260px] h-[280px] md:h-[320px] rounded-[20px] overflow-hidden relative group shadow-xl">
-
-            <img src="./destinations/p2.png" class="w-full h-full object-cover group-hover:scale-110 duration-700" />
-
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-
-          </div>
-          <!-- CARD 6 -->
-          <div
-            class="min-w-[220px] md:min-w-[260px] h-[280px] md:h-[320px] rounded-[20px] overflow-hidden relative group shadow-xl">
-
-            <img src="./destinations/p3.png" class="w-full h-full object-cover group-hover:scale-110 duration-700" />
-
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-
-          </div>
-           <!-- CARD 7 -->
-           <div
-            class="min-w-[220px] md:min-w-[260px] h-[280px] md:h-[320px] rounded-[20px] overflow-hidden relative group shadow-xl">
-
-            <img src="./destinations/ph1.jpeg" class="w-full h-full object-cover group-hover:scale-110 duration-700" />
-
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-
-          </div>
-           <!-- CARD 8 -->
-           <div
-            class="min-w-[220px] md:min-w-[260px] h-[280px] md:h-[320px] rounded-[20px] overflow-hidden relative group shadow-xl">
-
-            <img src="./destinations/ph2.png" class="w-full h-full object-cover group-hover:scale-110 duration-700" />
-
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-
-          </div>
-           <div
-            class="min-w-[220px] md:min-w-[260px] h-[280px] md:h-[320px] rounded-[20px] overflow-hidden relative group shadow-xl">
-
-            <img src="./destinations/ph3.png" class="w-full h-full object-cover group-hover:scale-110 duration-700" />
-
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-
-          </div>
+        <div class="card">
+          <img src="./destinations/ph3.png" />
         </div>
 
       </div>
 
     </div>
 
-  </section>
+  </div>
 
-  <style>
+</section>
+
+<style>
+  .fire-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+
+  background: linear-gradient(to bottom, #ffcf33, #ff7a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 2px 6px rgba(255, 115, 0, 0.35),
+    0 1px 0 rgba(0,0,0,0.2);
+}
+
   .top-attractions-slider {
-  animation: topAttractionScroll 10s linear infinite;
-  width: max-content;
-}
-
-@keyframes topAttractionScroll {
-  from {
-    transform: translateX(0);
+    width: max-content;
+    display: flex;
+    animation: topAttractionScroll 25s linear infinite;
   }
 
-  to {
-    transform: translateX(calc(-260px * 4));
+  .top-attractions-slider:hover {
+    animation-play-state: paused;
   }
-}
-  </style>
-  <script>
 
-    const slider = document.getElementById("topAttractionSlider");
+  .card {
+    min-width: 220px;
+    height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
 
-    const nextBtn = document.getElementById("topAttrNext");
+  @media (min-width:768px) {
+    .card {
+      min-width: 260px;
+      height: 320px;
+    }
+  }
 
-    const prevBtn = document.getElementById("topAttrPrev");
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.7s;
+  }
 
-    // NEXT BUTTON
-    nextBtn.addEventListener("click", () => {
+  .card:hover img {
+    transform: scale(1.1);
+  }
 
-      slider.scrollBy({
-        left: 320,
-        behavior: "smooth"
-      });
+  .card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.2),
+        transparent);
+  }
 
-    });
+  @keyframes topAttractionScroll {
 
-    // PREV BUTTON
-    prevBtn.addEventListener("click", () => {
+    from {
+      transform: translateX(0);
+    }
 
-      slider.scrollBy({
-        left: -320,
-        behavior: "smooth"
-      });
+    to {
+      transform: translateX(-50%);
+    }
+  }
 
-    });
-
-  </script>
+</style>
   <!-- Flight banner -->
   <section class="px-4 pb-12 sm:px-6 lg:px-8">
 
@@ -2178,58 +2207,49 @@
 
           // 🔥 BACK TO COVER (but controlled)
           '<img src="' + src + '" alt="Thailand package ' + (idx + 1) + '" loading="lazy" decoding="async" class="ko-img h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" />' +
-          '<!-- PACKAGE INCLUSIONS -->' +
+         '<!-- PACKAGE INCLUSIONS -->' +
 
 '<div class="border-t border-red-500 bg-white p-4">' +
 
-'<h4 class="mb-4 text-sm font-extrabold tracking-wide text-navy">Package Inclusions</h4>' +
+'<h4 class="mb-3 text-sm font-bold text-navy">Package Inclusions</h4>' +
 
 '<div class="grid grid-cols-4 gap-3 text-center">' +
 
 '<div class="flex flex-col items-center">' +
-'<div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-400 shadow-lg">' +
-'<i class="fa-solid fa-car-side text-xl text-white"></i>' +
-'</div>' +
-'<span class="mt-2 text-[11px] font-bold text-slate-700">Transfers</span>' +
+'<div class="text-4xl">🚘</div>' +
+'<span class="mt-1 text-[11px] font-semibold text-slate-700">Transfers</span>' +
 '</div>' +
 
 '<div class="flex flex-col items-center">' +
-'<div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-500 to-rose-400 shadow-lg">' +
-'<i class="fa-solid fa-hotel text-xl text-white"></i>' +
-'</div>' +
-'<span class="mt-2 text-[11px] font-bold text-slate-700">Hotels</span>' +
+'<div class="text-4xl">🏩</div>' +
+'<span class="mt-1 text-[11px] font-semibold text-slate-700">Hotels</span>' +
 '</div>' +
 
 '<div class="flex flex-col items-center">' +
-'<div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-yellow-400 shadow-lg">' +
-'<i class="fa-solid fa-utensils text-xl text-white"></i>' +
-'</div>' +
-'<span class="mt-2 text-[11px] font-bold text-slate-700">Meals</span>' +
+'<div class="text-4xl">🍷</div>' +
+'<span class="mt-1 text-[11px] font-semibold text-slate-700">Meals</span>' +
 '</div>' +
 
 '<div class="flex flex-col items-center">' +
-'<div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-green-500 to-emerald-400 shadow-lg">' +
-'<i class="fa-solid fa-umbrella-beach text-xl text-white"></i>' +
-'</div>' +
-'<span class="mt-2 text-[11px] font-bold text-slate-700">Sightseeing</span>' +
+'<div class="text-4xl">🏝️</div>' +
+'<span class="mt-1 text-[11px] font-semibold text-slate-700">Sightseeing</span>' +
 '</div>' +
 
 '</div>' +
 
 '<div class="mt-5 grid grid-cols-2 gap-3">' +
 
-'<a href="#" class="flex items-center justify-center gap-2 rounded-xl bg-[#a50f2d] px-4 py-3 text-sm font-bold text-white shadow-lg transition hover:scale-105">' +
-'<i class="fa-solid fa-phone-volume"></i>' +
+'<a href="#" class="flex items-center justify-center rounded-xl bg-[#a50f2d] px-4 py-3 text-sm font-bold text-white transition hover:scale-105">' +
 'ENQUIRE NOW' +
 '</a>' +
 
-'<a href="https://wa.me/919599260057" target="_blank" class="flex items-center justify-center gap-2 rounded-xl bg-[#32b255] px-4 py-3 text-sm font-bold text-white shadow-lg transition hover:scale-105">' +
-'<i class="fa-brands fa-whatsapp text-base"></i>' +
-'WHATSAPP' +
+'<a href="https://wa.me/919599260057" target="_blank" class="flex items-center justify-center rounded-xl bg-[#32b255] px-4 py-3 text-sm font-bold text-white transition hover:scale-105">' +
+'WHATSAPP NOW' +
 '</a>' +
 
 '</div>' +
 
+'</div>' +
 '</div>' +
 '</div>' +
           '</article>'
