@@ -996,7 +996,8 @@
       <!-- SLIDER -->
       <div class="relative overflow-hidden">
 
-        <div class="top-attractions-slider flex gap-4 w-max">
+
+        <div id="topAttractionSlider" class="top-attractions-slider flex gap-4 w-max">
 
           <!-- CARD 1 -->
           <div
@@ -1085,9 +1086,37 @@
       to {
         transform: translateX(-50%);
       }
-
     }
   </style>
+  <script>
+
+    const slider = document.getElementById("topAttractionSlider");
+
+    const nextBtn = document.getElementById("topAttrNext");
+
+    const prevBtn = document.getElementById("topAttrPrev");
+
+    // NEXT BUTTON
+    nextBtn.addEventListener("click", () => {
+
+      slider.scrollBy({
+        left: 320,
+        behavior: "smooth"
+      });
+
+    });
+
+    // PREV BUTTON
+    prevBtn.addEventListener("click", () => {
+
+      slider.scrollBy({
+        left: -320,
+        behavior: "smooth"
+      });
+
+    });
+
+  </script>
   <!-- Flight banner -->
   <section class="px-4 pb-12 sm:px-6 lg:px-8">
 
@@ -1270,7 +1299,13 @@
 
               <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/9X-78TH8nAQ/hqdefault.jpg"
                 alt="Customer arrival preview 3" />
+              <!-- CENTER YOUTUBE LOGO -->
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Youtube_shorts_icon.svg"
+                  class="w-16 sm:w-20 drop-shadow-2xl opacity-95" />
+
+              </div>
               <span
                 class="play-chip absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold text-white">
                 <i data-lucide="play-circle" class="h-3.5 w-3.5"></i>
@@ -1291,7 +1326,13 @@
 
               <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/b5RzQZMQZGc/hqdefault.jpg"
                 alt="Customer arrival preview 2" />
+              <!-- CENTER YOUTUBE LOGO -->
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Youtube_shorts_icon.svg"
+                  class="w-16 sm:w-20 drop-shadow-2xl opacity-95" />
+
+              </div>
               <span
                 class="play-chip absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold text-white">
                 <i data-lucide="play-circle" class="h-3.5 w-3.5"></i>
@@ -1311,7 +1352,13 @@
 
               <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/1Q3CgBYl8vk/hqdefault.jpg"
                 alt="Customer arrival preview 1" />
+              <!-- CENTER YOUTUBE LOGO -->
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Youtube_shorts_icon.svg"
+                  class="w-16 sm:w-20 drop-shadow-2xl opacity-95" />
+
+              </div>
               <span
                 class="play-chip absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold text-white">
                 <i data-lucide="play-circle" class="h-3.5 w-3.5"></i>
@@ -1330,7 +1377,13 @@
 
               <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/5kMTEd3on8I/hqdefault.jpg"
                 alt="Customer arrival preview 4" />
+              <!-- CENTER YOUTUBE LOGO -->
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Youtube_shorts_icon.svg"
+                  class="w-16 sm:w-20 drop-shadow-2xl opacity-95" />
+
+              </div>
               <span
                 class="play-chip absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold text-white">
                 <i data-lucide="play-circle" class="h-3.5 w-3.5"></i>
@@ -2039,49 +2092,49 @@
 
           // 🔥 BACK TO COVER (but controlled)
           '<img src="' + src + '" alt="Thailand package ' + (idx + 1) + '" loading="lazy" decoding="async" class="ko-img h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" />' +
-'<!-- PACKAGE INCLUSIONS -->' +
+          '<!-- PACKAGE INCLUSIONS -->' +
 
-'<div class="border-t border-slate-200 bg-white p-4">' +
+          '<div class="border-t border-slate-200 bg-white p-4">' +
 
-  '<h4 class="mb-3 text-sm font-bold text-navy">Package Inclusions</h4>' +
+          '<h4 class="mb-3 text-sm font-bold text-navy">Package Inclusions</h4>' +
 
-  '<div class="grid grid-cols-4 gap-3 text-center">' +
+          '<div class="grid grid-cols-4 gap-3 text-center">' +
 
-    '<div class="flex flex-col items-center">' +
-      '<div class="text-3xl">🚖</div>' +
-      '<span class="mt-1 text-[11px] font-semibold text-slate-700">Transfers</span>' +
-    '</div>' +
+          '<div class="flex flex-col items-center">' +
+          '<div class="text-3xl">🚖</div>' +
+          '<span class="mt-1 text-[11px] font-semibold text-slate-700">Transfers</span>' +
+          '</div>' +
 
-    '<div class="flex flex-col items-center">' +
-      '<div class="text-3xl">🏨</div>' +
-      '<span class="mt-1 text-[11px] font-semibold text-slate-700">Hotels</span>' +
-    '</div>' +
+          '<div class="flex flex-col items-center">' +
+          '<div class="text-3xl">🏨</div>' +
+          '<span class="mt-1 text-[11px] font-semibold text-slate-700">Hotels</span>' +
+          '</div>' +
 
-    '<div class="flex flex-col items-center">' +
-      '<div class="text-3xl">🍽️</div>' +
-      '<span class="mt-1 text-[11px] font-semibold text-slate-700">Meals</span>' +
-    '</div>' +
+          '<div class="flex flex-col items-center">' +
+          '<div class="text-3xl">🍽️</div>' +
+          '<span class="mt-1 text-[11px] font-semibold text-slate-700">Meals</span>' +
+          '</div>' +
 
-    '<div class="flex flex-col items-center">' +
-      '<div class="text-3xl">🌴</div>' +
-      '<span class="mt-1 text-[11px] font-semibold text-slate-700">Sightseeing</span>' +
-    '</div>' +
+          '<div class="flex flex-col items-center">' +
+          '<div class="text-3xl">🌴</div>' +
+          '<span class="mt-1 text-[11px] font-semibold text-slate-700">Sightseeing</span>' +
+          '</div>' +
 
-  '</div>' +
+          '</div>' +
 
-  '<div class="mt-5 grid grid-cols-2 gap-3">' +
+          '<div class="mt-5 grid grid-cols-2 gap-3">' +
 
-    '<a href="#" class="flex items-center justify-center rounded-xl bg-[#a50f2d] px-4 py-3 text-sm font-bold text-white transition hover:scale-105">' +
-      'ENQUIRE NOW' +
-    '</a>' +
+          '<a href="#" class="flex items-center justify-center rounded-xl bg-[#a50f2d] px-4 py-3 text-sm font-bold text-white transition hover:scale-105">' +
+          'ENQUIRE NOW' +
+          '</a>' +
 
-    '<a href="https://wa.me/919599260057" target="_blank" class="flex items-center justify-center rounded-xl bg-[#32b255] px-4 py-3 text-sm font-bold text-white transition hover:scale-105">' +
-      'WHATSAPP NOW' +
-    '</a>' +
+          '<a href="https://wa.me/919599260057" target="_blank" class="flex items-center justify-center rounded-xl bg-[#32b255] px-4 py-3 text-sm font-bold text-white transition hover:scale-105">' +
+          'WHATSAPP NOW' +
+          '</a>' +
 
-  '</div>' +
+          '</div>' +
 
-'</div>' +
+          '</div>' +
           '</div>' +
           '</article>'
         );
