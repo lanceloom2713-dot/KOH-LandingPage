@@ -236,21 +236,27 @@
 
   <!-- Header -->
   <!-- HEADER -->
-  <header
-    class="fixed top-0 left-0 right-0 z-[9999] border-b border-slate-200/80 bg-white/95 shadow-md backdrop-blur-md">
+<header
+  class="fixed top-0 left-0 right-0 z-[9999] border-b border-slate-200/80 bg-white/95 shadow-md backdrop-blur-md">
 
-    <div class="mx-auto max-w-[95rem] px-4 py-3">
+  <div class="mx-auto max-w-[95rem] px-4 py-3">
 
-      <!-- TOP BAR -->
-      <div class="flex items-center justify-between gap-4">
+    <!-- TOP BAR -->
+    <div class="flex items-center justify-between gap-4">
+
+      <!-- LEFT -->
+      <div class="flex items-center gap-8">
 
         <!-- LOGO -->
-        <a href="#" class="flex items-center gap-3">
+        <a href="#" class="flex items-center gap-3 shrink-0">
 
           <div
             class="relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl bg-white shadow-md ring-2 ring-ocean/20">
 
-            <img src="img/koh logo.jpeg" alt="Kingdom of Holidays logo" class="h-full w-full object-cover" />
+            <img
+              src="img/koh logo.jpeg"
+              alt="Kingdom of Holidays logo"
+              class="h-full w-full object-cover" />
 
           </div>
 
@@ -268,100 +274,126 @@
 
         </a>
 
-        <!-- DESKTOP RIGHT -->
-        <div class="hidden items-center gap-3 lg:flex">
+        <!-- TRUST TAGS -->
+        <div class="hidden xl:flex items-center gap-3">
 
-          <!-- INFO BOX -->
+          <!-- VERIFIED AGENT -->
+
           <div
-            class="rounded-xl border border-slate-200 bg-white px-4 py-2 text-[10px] font-medium text-slate-600 shadow-sm">
+            class="group relative overflow-hidden rounded-full border border-emerald-200 bg-gradient-to-r from-emerald-50 to-white px-4 py-2 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-lg">
 
-            <!-- TOP ROW -->
-            <div class="flex items-center gap-2 whitespace-nowrap">
-
-              <span class="inline-flex items-center gap-1 font-extrabold text-slate-800">
-                <i data-lucide="phone" class="h-3.5 w-3.5 text-ocean"></i>
-                9599260057 | 9971600663
-              </span>
-
-              <span class="inline-flex items-center gap-1 font-extrabold text-slate-800">
-                <i data-lucide="mail" class="h-3.5 w-3.5 text-ocean"></i>
-                info@kingdomofholidays.com
-              </span>
-
+            <!-- GLOW -->
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-emerald-400/10 to-transparent opacity-0 transition duration-300 group-hover:opacity-100">
             </div>
 
-            <!-- LOCATIONS -->
-            <div class="mt-1 flex items-center gap-2 whitespace-nowrap font-bold text-slate-800">
+            <div class="relative flex items-center gap-2">
 
-              <span>📍 Delhi-NCR-GZB</span>
+              <div
+                class="flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500 text-white shadow">
 
-              <span class="text-slate-300">|</span>
+                ✓
 
-              <span>📍 Sri Vijaya Puram, Andaman & Nicobar Islands</span>
+              </div>
 
-              <span class="text-slate-300">|</span>
+              <div class="leading-tight">
 
-              <span>📍 Chonburi Pattaya - Thailand</span>
+                <p class="text-[10px] font-semibold uppercase tracking-wide text-emerald-600">
+                  Trusted
+                </p>
+
+                <p class="text-xs font-extrabold text-slate-800">
+                  Verified Agent
+                </p>
+
+              </div>
 
             </div>
 
           </div>
 
-          <!-- BUTTON -->
-          <a href="https://wa.me/919599260057"
-            class="btn-travel-gradient ripple-btn inline-flex items-center rounded-full px-5 py-2 text-sm font-bold text-white shadow-md">
+          <!-- BEST PRICE -->
 
-            Send Us Quotes
+          <div
+            class="group relative overflow-hidden rounded-full border border-yellow-200 bg-gradient-to-r from-yellow-50 to-white px-4 py-2 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-lg">
 
-          </a>
+            <!-- GLOW -->
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-yellow-400/10 to-transparent opacity-0 transition duration-300 group-hover:opacity-100">
+            </div>
+
+            <div class="relative flex items-center gap-2">
+
+              <div
+                class="flex h-7 w-7 items-center justify-center rounded-full bg-yellow-400 text-white shadow">
+
+                ★
+
+              </div>
+
+              <div class="leading-tight">
+
+                <p class="text-[10px] font-semibold uppercase tracking-wide text-yellow-600">
+                  Best Deal
+                </p>
+
+                <p class="text-xs font-extrabold text-slate-800">
+                  Price Guarantee
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
 
       </div>
 
-      <!-- MOBILE INFO -->
-      <div class="mt-4 flex flex-col gap-3 lg:hidden">
+      <!-- DESKTOP RIGHT -->
+      <div class="hidden items-center gap-3 lg:flex">
 
-        <!-- CONTACT BOX -->
-        <div class="rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
+        <!-- INFO BOX -->
+        <div
+          class="rounded-xl border border-slate-200 bg-white px-4 py-2 text-[10px] font-medium text-slate-600 shadow-sm">
 
-          <!-- PHONE -->
-          <div class="flex items-center gap-2 text-sm font-extrabold text-slate-800">
+          <!-- TOP ROW -->
+          <div class="flex items-center gap-2 whitespace-nowrap">
 
-            <i data-lucide="phone" class="h-4 w-4 text-ocean"></i>
+            <span class="inline-flex items-center gap-1 font-extrabold text-slate-800">
+              <i data-lucide="phone" class="h-3.5 w-3.5 text-ocean"></i>
+              9599260057 | 9971600663
+            </span>
 
-            9599260057 | 9971600663
+            <span class="inline-flex items-center gap-1 font-extrabold text-slate-800">
+              <i data-lucide="mail" class="h-3.5 w-3.5 text-ocean"></i>
+              info@kingdomofholidays.com
+            </span>
 
           </div>
 
-          <!-- EMAIL -->
-          <div class="mt-3 flex items-center gap-2 text-sm font-bold text-slate-800">
+          <!-- LOCATIONS -->
+          <div class="mt-1 flex items-center gap-2 whitespace-nowrap font-bold text-slate-800">
 
-            <i data-lucide="mail" class="h-4 w-4 text-ocean"></i>
+            <span>📍 Delhi-NCR-GZB</span>
 
-            info@kingdomofholidays.com
+            <span class="text-slate-300">|</span>
+
+            <span>📍 Sri Vijaya Puram, Andaman & Nicobar Islands</span>
+
+            <span class="text-slate-300">|</span>
+
+            <span>📍 Chonburi Pattaya - Thailand</span>
 
           </div>
 
         </div>
 
-        <!-- LOCATION BOX -->
-        <div class="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-bold text-slate-800 shadow-sm">
-
-          <div class="space-y-2">
-
-            <div>📍 Delhi-NCR-GZB</div>
-
-            <div>📍 Sri Vijaya Puram, Andaman & Nicobar Islands</div>
-
-            <div>📍 Chonburi Pattaya - Thailand</div>
-
-          </div>
-
-        </div>
-        <!-- MOBILE BUTTON -->
-        <a href="https://wa.me/919599260057"
-          class="btn-travel-gradient flex items-center justify-center rounded-2xl px-5 py-4 text-base font-extrabold text-white shadow-lg">
+        <!-- BUTTON -->
+        <a
+          href="https://wa.me/919599260057"
+          class="btn-travel-gradient ripple-btn inline-flex items-center rounded-full px-5 py-2 text-sm font-bold text-white shadow-md">
 
           Send Us Quotes
 
@@ -371,8 +403,123 @@
 
     </div>
 
-  </header>
-  <div class="h-[120px] lg:h-[95px]"></div>
+    <!-- MOBILE INFO -->
+    <div class="mt-4 flex flex-col gap-3 lg:hidden">
+
+      <!-- MOBILE TRUST TAGS -->
+
+      <div class="flex gap-2">
+
+        <!-- VERIFIED -->
+
+        <div
+          class="flex flex-1 items-center gap-2 rounded-2xl border border-emerald-200 bg-emerald-50 px-3 py-2">
+
+          <div
+            class="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500 text-sm font-bold text-white">
+
+            ✓
+
+          </div>
+
+          <div class="leading-tight">
+
+            <p class="text-[10px] font-bold uppercase tracking-wide text-emerald-600">
+              Trusted
+            </p>
+
+            <p class="text-[11px] font-extrabold text-slate-800">
+              Verified Agent
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- PRICE -->
+
+        <div
+          class="flex flex-1 items-center gap-2 rounded-2xl border border-yellow-200 bg-yellow-50 px-3 py-2">
+
+          <div
+            class="flex h-8 w-8 items-center justify-center rounded-full bg-yellow-400 text-sm font-bold text-white">
+
+            ★
+
+          </div>
+
+          <div class="leading-tight">
+
+            <p class="text-[10px] font-bold uppercase tracking-wide text-yellow-600">
+              Best Deal
+            </p>
+
+            <p class="text-[11px] font-extrabold text-slate-800">
+              Price Guarantee
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CONTACT BOX -->
+      <div class="rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
+
+        <!-- PHONE -->
+        <div class="flex items-center gap-2 text-sm font-extrabold text-slate-800">
+
+          <i data-lucide="phone" class="h-4 w-4 text-ocean"></i>
+
+          9599260057 | 9971600663
+
+        </div>
+
+        <!-- EMAIL -->
+        <div class="mt-3 flex items-center gap-2 text-sm font-bold text-slate-800">
+
+          <i data-lucide="mail" class="h-4 w-4 text-ocean"></i>
+
+          info@kingdomofholidays.com
+
+        </div>
+
+      </div>
+
+      <!-- LOCATION BOX -->
+      <div
+        class="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-bold text-slate-800 shadow-sm">
+
+        <div class="space-y-2">
+
+          <div>📍 Delhi-NCR-GZB</div>
+
+          <div>📍 Sri Vijaya Puram, Andaman & Nicobar Islands</div>
+
+          <div>📍 Chonburi Pattaya - Thailand</div>
+
+        </div>
+
+      </div>
+
+      <!-- MOBILE BUTTON -->
+      <a
+        href="https://wa.me/919599260057"
+        class="btn-travel-gradient flex items-center justify-center rounded-2xl px-5 py-4 text-base font-extrabold text-white shadow-lg">
+
+        Send Us Quotes
+
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+<!-- HEADER SPACING -->
+<div class="h-[170px] lg:h-[95px]"></div>
   <div
     class="bg-gradient-to-r from-navy via-ocean to-navy px-4 py-2 text-left text-xs font-semibold tracking-wide text-accent sm:text-sm">
     TAN License Number - MRTR09551D | IATTE /20-21/2157
