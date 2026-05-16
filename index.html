@@ -14,9 +14,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
     rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -235,8 +235,7 @@
   </style>
 </head>
 
-<body class="bg-softwhite font-sans text-slate-800 antialiased">
-
+<body class="bg-softwhite font-sans text-slate-800 antialiased pb-16 lg:pb-0">
   <!-- Header -->
   <!-- HEADER -->
   <header
@@ -400,121 +399,47 @@
 
       </div>
 
-      <!-- MOBILE INFO -->
-      <div class="mt-4 flex flex-col gap-3 lg:hidden">
+      <!-- MOBILE HEADER -->
+      <div class="lg:hidden mt-3">
 
-        <!-- MOBILE TRUST TAGS -->
+        <div class="flex items-center justify-between rounded-2xl border border-green-300 bg-white px-3 py-2 shadow">
 
-        <div class="flex gap-2">
+          <!-- call section -->
+          <div class="flex items-center gap-2">
 
-          <!-- VERIFIED -->
-
-          <div class="flex flex-1 items-center gap-2 rounded-2xl border border-emerald-200 bg-emerald-50 px-3 py-2">
-
-            <div
-              class="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500 text-sm font-bold text-white">
-
-              ✓
-
-            </div>
+            <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png"
+              class="w-10 h-10 rounded-full object-cover">
 
             <div class="leading-tight">
-
-              <p class="text-[10px] font-bold uppercase tracking-wide text-emerald-600">
-                Trusted
+              <p class="text-[12px] font-bold text-slate-700">
+                Call for Phone Deals
               </p>
 
-              <p class="text-[11px] font-extrabold text-slate-800">
-                Verified Agent
-              </p>
-
+              <a href="tel:+919599260057" class="text-[16px] font-extrabold text-green-600">
+                +91-9599260057
+              </a>
             </div>
 
           </div>
 
-          <!-- PRICE -->
+          <!-- right side -->
+          <a href="https://wa.me/919599260057" class="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-bold">
 
-          <div class="flex flex-1 items-center gap-2 rounded-2xl border border-yellow-200 bg-yellow-50 px-3 py-2">
+            WhatsApp
 
-            <div
-              class="flex h-8 w-8 items-center justify-center rounded-full bg-yellow-400 text-sm font-bold text-white">
-
-              ★
-
-            </div>
-
-            <div class="leading-tight">
-
-              <p class="text-[10px] font-bold uppercase tracking-wide text-yellow-600">
-                Best Deal
-              </p>
-
-              <p class="text-[11px] font-extrabold text-slate-800">
-                Price Guarantee
-              </p>
-
-            </div>
-
-          </div>
+          </a>
 
         </div>
-
-        <!-- CONTACT BOX -->
-        <div class="rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
-
-          <!-- PHONE -->
-          <div class="flex items-center gap-2 text-sm font-extrabold text-slate-800">
-
-            <i data-lucide="phone" class="h-4 w-4 text-ocean"></i>
-
-            9599260057 | 9971600663
-
-          </div>
-
-          <!-- EMAIL -->
-          <div class="mt-3 flex items-center gap-2 text-sm font-bold text-slate-800">
-
-            <i data-lucide="mail" class="h-4 w-4 text-ocean"></i>
-
-            info@kingdomofholidays.com
-
-          </div>
-
-        </div>
-
-        <!-- LOCATION BOX -->
-        <div class="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-bold text-slate-800 shadow-sm">
-
-          <div class="space-y-2">
-
-            <div>📍 Delhi-NCR-GZB</div>
-
-            <div>📍 Sri Vijaya Puram, Andaman & Nicobar Islands</div>
-
-            <div>📍 Chonburi Pattaya - Thailand</div>
-
-          </div>
-
-        </div>
-
-        <!-- MOBILE BUTTON -->
-        <a href="https://wa.me/919599260057"
-          class="btn-travel-gradient flex items-center justify-center rounded-2xl px-5 py-4 text-base font-extrabold text-white shadow-lg">
-
-          Send Us Quotes
-
-        </a>
 
       </div>
-
     </div>
 
   </header>
 
   <!-- HEADER SPACING -->
-  <div class="h-[170px] lg:h-[95px]"></div>
-  <div
-    class="bg-gradient-to-r from-navy via-ocean to-navy px-4 py-2 text-left text-xs font-semibold tracking-wide text-accent sm:text-sm">
+  <div class="h-[150px] lg:h-[95px]"></div>
+  <div <div
+    class="relative z-10 bg-gradient-to-r from-navy via-ocean to-navy px-4 py-2 text-left text-xs font-semibold tracking-wide text-accent sm:text-sm">
     TAN License Number - MRTR09551D | IATTE /20-21/2157
   </div>
 
@@ -912,12 +837,12 @@
       <div class="mb-8 text-center reveal">
         <h2 class="font-display mt-2 text-3xl font-extrabold text-navy sm:text-4xl">Popular Thailand Packages</h2>
         <p class="fire-text mx-auto mt-3 max-w-3xl text-base font-bold leading-relaxed">
-  Expert-crafted Thailand packages for
-  <span>Couples</span>,
-  <span>Friends</span>,
-  <span>Families</span> &
-  <span>Honeymoon Travelers</span>
-</p>
+          Expert-crafted Thailand packages for
+          <span>Couples</span>,
+          <span>Friends</span>,
+          <span>Families</span> &
+          <span>Honeymoon Travelers</span>
+        </p>
       </div>
       <div id="package-filters"
         class="glass-panel reveal mb-8 flex flex-wrap justify-center gap-3 rounded-2xl p-4 shadow-card"></div>
@@ -938,192 +863,190 @@
   </section>
   <!-- TOP ATTRACTIONS -->
   <!-- TOP ATTRACTIONS -->
-<section class="pt-2 pb-16 bg-gradient-to-b from-white to-slate-50 overflow-hidden">
+  <section class="pt-2 pb-16 bg-gradient-to-b from-white to-slate-50 overflow-hidden">
 
-  <div class="mx-auto max-w-7xl">
+    <div class="mx-auto max-w-7xl">
 
-    <!-- HEADING -->
-    <div class="mb-8 text-center reveal">
+      <!-- HEADING -->
+      <div class="mb-8 text-center reveal">
 
-      <h2 class="font-display mt-2 text-3xl font-extrabold text-navy sm:text-4xl">
-        Top Attractions
-      </h2>
+        <h2 class="font-display mt-2 text-3xl font-extrabold text-navy sm:text-4xl">
+          Top Attractions
+        </h2>
 
-    </div>
+      </div>
 
-    <!-- SLIDER -->
-    <div class="relative overflow-hidden w-full">
+      <!-- SLIDER -->
+      <div class="relative overflow-hidden w-full">
 
-      <div id="topAttractionSlider"
-        class="top-attractions-slider flex gap-4">
+        <div id="topAttractionSlider" class="top-attractions-slider flex gap-4">
 
-        <!-- CARD 1 -->
-        <div class="card">
-          <img src="./destinations/b1.png" />
-        </div>
+          <!-- CARD 1 -->
+          <div class="card">
+            <img src="./destinations/b1.png" />
+          </div>
 
-        <!-- CARD 2 -->
-        <div class="card">
-          <img src="./destinations/b2.png" />
-        </div>
+          <!-- CARD 2 -->
+          <div class="card">
+            <img src="./destinations/b2.png" />
+          </div>
 
-        <!-- CARD 3 -->
-        <div class="card">
-          <img src="./destinations/b3.png" />
-        </div>
+          <!-- CARD 3 -->
+          <div class="card">
+            <img src="./destinations/b3.png" />
+          </div>
 
-        <!-- CARD 4 -->
-        <div class="card">
-          <img src="./destinations/p1.png" />
-        </div>
+          <!-- CARD 4 -->
+          <div class="card">
+            <img src="./destinations/p1.png" />
+          </div>
 
-        <!-- CARD 5 -->
-        <div class="card">
-          <img src="./destinations/p2.png" />
-        </div>
+          <!-- CARD 5 -->
+          <div class="card">
+            <img src="./destinations/p2.png" />
+          </div>
 
-        <!-- CARD 6 -->
-        <div class="card">
-          <img src="./destinations/p3.png" />
-        </div>
+          <!-- CARD 6 -->
+          <div class="card">
+            <img src="./destinations/p3.png" />
+          </div>
 
-        <!-- CARD 7 -->
-        <div class="card">
-          <img src="./destinations/ph1.jpeg" />
-        </div>
+          <!-- CARD 7 -->
+          <div class="card">
+            <img src="./destinations/ph1.jpeg" />
+          </div>
 
-        <!-- CARD 8 -->
-        <div class="card">
-          <img src="./destinations/ph2.png" />
-        </div>
+          <!-- CARD 8 -->
+          <div class="card">
+            <img src="./destinations/ph2.png" />
+          </div>
 
-        <!-- CARD 9 -->
-        <div class="card">
-          <img src="./destinations/ph3.png" />
-        </div>
+          <!-- CARD 9 -->
+          <div class="card">
+            <img src="./destinations/ph3.png" />
+          </div>
 
-        <!-- DUPLICATE FOR INFINITE LOOP -->
+          <!-- DUPLICATE FOR INFINITE LOOP -->
 
-        <div class="card">
-          <img src="./destinations/b1.png" />
-        </div>
+          <div class="card">
+            <img src="./destinations/b1.png" />
+          </div>
 
-        <div class="card">
-          <img src="./destinations/b2.png" />
-        </div>
+          <div class="card">
+            <img src="./destinations/b2.png" />
+          </div>
 
-        <div class="card">
-          <img src="./destinations/b3.png" />
-        </div>
+          <div class="card">
+            <img src="./destinations/b3.png" />
+          </div>
 
-        <div class="card">
-          <img src="./destinations/p1.png" />
-        </div>
+          <div class="card">
+            <img src="./destinations/p1.png" />
+          </div>
 
-        <div class="card">
-          <img src="./destinations/p2.png" />
-        </div>
+          <div class="card">
+            <img src="./destinations/p2.png" />
+          </div>
 
-        <div class="card">
-          <img src="./destinations/p3.png" />
-        </div>
+          <div class="card">
+            <img src="./destinations/p3.png" />
+          </div>
 
-        <div class="card">
-          <img src="./destinations/ph1.jpeg" />
-        </div>
+          <div class="card">
+            <img src="./destinations/ph1.jpeg" />
+          </div>
 
-        <div class="card">
-          <img src="./destinations/ph2.png" />
-        </div>
+          <div class="card">
+            <img src="./destinations/ph2.png" />
+          </div>
 
-        <div class="card">
-          <img src="./destinations/ph3.png" />
+          <div class="card">
+            <img src="./destinations/ph3.png" />
+          </div>
+
         </div>
 
       </div>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
+  <style>
+    .fire-text {
+      font-family: 'Oswald', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      line-height: 1.4;
 
-<style>
-  .fire-text {
-  font-family: 'Oswald', sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  line-height: 1.4;
+      background: linear-gradient(to bottom, #ffcf33, #ff7a00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
-  background: linear-gradient(to bottom, #ffcf33, #ff7a00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+      text-shadow:
+        0 2px 6px rgba(255, 115, 0, 0.35),
+        0 1px 0 rgba(0, 0, 0, 0.2);
+    }
 
-  text-shadow:
-    0 2px 6px rgba(255, 115, 0, 0.35),
-    0 1px 0 rgba(0,0,0,0.2);
-}
+    .top-attractions-slider {
+      width: max-content;
+      display: flex;
+      animation: topAttractionScroll 25s linear infinite;
+    }
 
-  .top-attractions-slider {
-    width: max-content;
-    display: flex;
-    animation: topAttractionScroll 25s linear infinite;
-  }
+    .top-attractions-slider:hover {
+      animation-play-state: paused;
+    }
 
-  .top-attractions-slider:hover {
-    animation-play-state: paused;
-  }
-
-  .card {
-    min-width: 220px;
-    height: 280px;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-  }
-
-  @media (min-width:768px) {
     .card {
-      min-width: 260px;
-      height: 320px;
-    }
-  }
-
-  .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.7s;
-  }
-
-  .card:hover img {
-    transform: scale(1.1);
-  }
-
-  .card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top,
-        rgba(0,0,0,0.9),
-        rgba(0,0,0,0.2),
-        transparent);
-  }
-
-  @keyframes topAttractionScroll {
-
-    from {
-      transform: translateX(0);
+      min-width: 220px;
+      height: 280px;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     }
 
-    to {
-      transform: translateX(-50%);
+    @media (min-width:768px) {
+      .card {
+        min-width: 260px;
+        height: 320px;
+      }
     }
-  }
 
-</style>
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.7s;
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top,
+          rgba(0, 0, 0, 0.9),
+          rgba(0, 0, 0, 0.2),
+          transparent);
+    }
+
+    @keyframes topAttractionScroll {
+
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
   <!-- Flight banner -->
   <section class="px-4 pb-12 sm:px-6 lg:px-8">
 
@@ -1209,127 +1132,124 @@
 
   </section>
   <!-- Recent Arrivals -->
-<section class="px-4 py-16 sm:px-6 lg:px-8 overflow-hidden bg-slate-50">
+  <section class="px-4 py-16 sm:px-6 lg:px-8 overflow-hidden bg-slate-50">
 
-  <div class="mx-auto max-w-7xl">
+    <div class="mx-auto max-w-7xl">
 
-    <!-- HEADING -->
-    <div class="text-center">
+      <!-- HEADING -->
+      <div class="text-center">
 
-      <h2 class="font-display text-3xl font-extrabold text-navy sm:text-4xl">
-        Recent Arrivals
-      </h2>
+        <h2 class="font-display text-3xl font-extrabold text-navy sm:text-4xl">
+          Recent Arrivals
+        </h2>
 
-    </div>
+      </div>
 
-    <!-- SLIDER -->
-    <div class="relative mt-12 overflow-hidden">
+      <!-- SLIDER -->
+      <div class="relative mt-12 overflow-hidden">
 
-      <div id="arrivalSlider"
-        class="flex gap-6 w-max">
+        <div id="arrivalSlider" class="flex gap-6 w-max">
 
-        <!-- CARD -->
-        <figure
-          class="group relative overflow-hidden rounded-[24px] border border-cyan-400/40 shadow-[0_0_25px_rgba(34,211,238,0.45)] shrink-0">
+          <!-- CARD -->
+          <figure
+            class="group relative overflow-hidden rounded-[24px] border border-cyan-400/40 shadow-[0_0_25px_rgba(34,211,238,0.45)] shrink-0">
 
-          <img src="./arrivals/rv1.jpeg"
-            class="h-[260px] w-[420px] object-cover transition duration-700 group-hover:scale-110" />
+            <img src="./arrivals/rv1.jpeg"
+              class="h-[260px] w-[420px] object-cover transition duration-700 group-hover:scale-110" />
 
-        </figure>
+          </figure>
 
-        <!-- CARD -->
-        <figure
-         class="group relative overflow-hidden rounded-[24px] border border-cyan-400/40 shadow-[0_0_25px_rgba(34,211,238,0.45)] shrink-0">
+          <!-- CARD -->
+          <figure
+            class="group relative overflow-hidden rounded-[24px] border border-cyan-400/40 shadow-[0_0_25px_rgba(34,211,238,0.45)] shrink-0">
 
-          <img src="./arrivals/rv2.jpeg"
-            class="h-[260px] w-[420px] object-cover transition duration-700 group-hover:scale-110" />
+            <img src="./arrivals/rv2.jpeg"
+              class="h-[260px] w-[420px] object-cover transition duration-700 group-hover:scale-110" />
 
-        </figure>
+          </figure>
 
-        <!-- CARD -->
-        <figure
-          class="group relative overflow-hidden rounded-[24px] border border-cyan-400/40 shadow-[0_0_25px_rgba(34,211,238,0.45)] shrink-0">
+          <!-- CARD -->
+          <figure
+            class="group relative overflow-hidden rounded-[24px] border border-cyan-400/40 shadow-[0_0_25px_rgba(34,211,238,0.45)] shrink-0">
 
-          <img src="./arrivals/rv3.jpeg"
-            class="h-[260px] w-[420px] object-cover transition duration-700 group-hover:scale-110" />
+            <img src="./arrivals/rv3.jpeg"
+              class="h-[260px] w-[420px] object-cover transition duration-700 group-hover:scale-110" />
 
-        </figure>
+          </figure>
 
-        <!-- CARD -->
-        <figure
-          class="group relative overflow-hidden rounded-[24px] border border-cyan-400/40 shadow-[0_0_25px_rgba(34,211,238,0.45)] shrink-0">
+          <!-- CARD -->
+          <figure
+            class="group relative overflow-hidden rounded-[24px] border border-cyan-400/40 shadow-[0_0_25px_rgba(34,211,238,0.45)] shrink-0">
 
-          <img src="./arrivals/rv4.jpeg"
-            class="h-[260px] w-[420px] object-cover transition duration-700 group-hover:scale-110" />
+            <img src="./arrivals/rv4.jpeg"
+              class="h-[260px] w-[420px] object-cover transition duration-700 group-hover:scale-110" />
 
-        </figure>
+          </figure>
 
-        <!-- CARD -->
-        <figure
-          class="group relative overflow-hidden rounded-[24px] border border-cyan-400/40 shadow-[0_0_25px_rgba(34,211,238,0.45)] shrink-0">
+          <!-- CARD -->
+          <figure
+            class="group relative overflow-hidden rounded-[24px] border border-cyan-400/40 shadow-[0_0_25px_rgba(34,211,238,0.45)] shrink-0">
 
-          <img src="./arrivals/rv5.jpeg"
-            class="h-[260px] w-[420px] object-cover transition duration-700 group-hover:scale-110" />
+            <img src="./arrivals/rv5.jpeg"
+              class="h-[260px] w-[420px] object-cover transition duration-700 group-hover:scale-110" />
 
-        </figure>
+          </figure>
 
-        <!-- CARD -->
-        <figure
-          class="group relative overflow-hidden rounded-[24px] border border-cyan-400/40 shadow-[0_0_25px_rgba(34,211,238,0.45)] shrink-0">
+          <!-- CARD -->
+          <figure
+            class="group relative overflow-hidden rounded-[24px] border border-cyan-400/40 shadow-[0_0_25px_rgba(34,211,238,0.45)] shrink-0">
 
-          <img src="./arrivals/rv6.jpeg"
-            class="h-[260px] w-[420px] object-cover transition duration-700 group-hover:scale-110" />
+            <img src="./arrivals/rv6.jpeg"
+              class="h-[260px] w-[420px] object-cover transition duration-700 group-hover:scale-110" />
 
-        </figure>
+          </figure>
 
-        <!-- DUPLICATE FOR INFINITE -->
-        <figure
-        class="group relative overflow-hidden rounded-[24px] border border-cyan-400/40 shadow-[0_0_25px_rgba(34,211,238,0.45)] shrink-0">
+          <!-- DUPLICATE FOR INFINITE -->
+          <figure
+            class="group relative overflow-hidden rounded-[24px] border border-cyan-400/40 shadow-[0_0_25px_rgba(34,211,238,0.45)] shrink-0">
 
-          <img src="./arrivals/rv1.jpeg"
-            class="h-[260px] w-[420px] object-cover transition duration-700 group-hover:scale-110" />
+            <img src="./arrivals/rv1.jpeg"
+              class="h-[260px] w-[420px] object-cover transition duration-700 group-hover:scale-110" />
 
-        </figure>
+          </figure>
 
-        <figure
-        class="group relative overflow-hidden rounded-[24px] border border-cyan-400/40 shadow-[0_0_25px_rgba(34,211,238,0.45)] shrink-0">
+          <figure
+            class="group relative overflow-hidden rounded-[24px] border border-cyan-400/40 shadow-[0_0_25px_rgba(34,211,238,0.45)] shrink-0">
 
-          <img src="./arrivals/rv2.jpeg"
-            class="h-[260px] w-[420px] object-cover transition duration-700 group-hover:scale-110" />
+            <img src="./arrivals/rv2.jpeg"
+              class="h-[260px] w-[420px] object-cover transition duration-700 group-hover:scale-110" />
 
-        </figure>
+          </figure>
+
+        </div>
 
       </div>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
-
-<style>
-
-  #arrivalSlider{
-    animation:arrivalScroll 28s linear infinite;
-  }
-
-  #arrivalSlider:hover{
-    animation-play-state:paused;
-  }
-
-  @keyframes arrivalScroll{
-
-    from{
-      transform:translateX(0);
+  <style>
+    #arrivalSlider {
+      animation: arrivalScroll 28s linear infinite;
     }
 
-    to{
-      transform:translateX(-50%);
+    #arrivalSlider:hover {
+      animation-play-state: paused;
     }
 
-  }
+    @keyframes arrivalScroll {
 
-</style>
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+
+    }
+  </style>
 
   <!-- How it works -->
   <section class="travel-art-bg-soft border-t border-slate-200 px-4 pt-2 pb-14 sm:px-6 lg:px-8">
@@ -1428,13 +1348,12 @@
 
               <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/9X-78TH8nAQ/hqdefault.jpg"
                 alt="Customer arrival preview 3" />
-                <!-- KOH LOGO -->
-<div class="absolute top-3 left-3 z-20">
+              <!-- KOH LOGO -->
+              <div class="absolute top-3 left-3 z-20">
 
-  <img src="img/koh logo.jpeg"
-    class="w-8 sm:w-10 object-contain drop-shadow-xl" />
+                <img src="img/koh logo.jpeg" class="w-8 sm:w-10 object-contain drop-shadow-xl" />
 
-</div>
+              </div>
               <!-- CENTER YOUTUBE LOGO -->
               <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
 
@@ -1462,13 +1381,12 @@
 
               <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/b5RzQZMQZGc/hqdefault.jpg"
                 alt="Customer arrival preview 2" />
-                <!-- KOH LOGO -->
-<div class="absolute top-3 left-3 z-20">
+              <!-- KOH LOGO -->
+              <div class="absolute top-3 left-3 z-20">
 
-   <img src="img/koh logo.jpeg"
-    class="w-8 sm:w-10 object-contain drop-shadow-xl" />
+                <img src="img/koh logo.jpeg" class="w-8 sm:w-10 object-contain drop-shadow-xl" />
 
-</div>
+              </div>
               <!-- CENTER YOUTUBE LOGO -->
               <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
 
@@ -1495,13 +1413,12 @@
 
               <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/1Q3CgBYl8vk/hqdefault.jpg"
                 alt="Customer arrival preview 1" />
-                <!-- KOH LOGO -->
-<div class="absolute top-3 left-3 z-20">
+              <!-- KOH LOGO -->
+              <div class="absolute top-3 left-3 z-20">
 
-  <img src="img/koh logo.jpeg"
-    class="w-8 sm:w-10 object-contain drop-shadow-xl" />
+                <img src="img/koh logo.jpeg" class="w-8 sm:w-10 object-contain drop-shadow-xl" />
 
-</div>
+              </div>
               <!-- CENTER YOUTUBE LOGO -->
               <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
 
@@ -1527,13 +1444,12 @@
 
               <img class="video-frame" loading="lazy" src="https://i.ytimg.com/vi/5kMTEd3on8I/hqdefault.jpg"
                 alt="Customer arrival preview 4" />
-                <!-- KOH LOGO -->
-<div class="absolute top-3 left-3 z-20">
+              <!-- KOH LOGO -->
+              <div class="absolute top-3 left-3 z-20">
 
-  <img src="img/koh logo.jpeg"
-    class="w-8 sm:w-10 object-contain drop-shadow-xl" />
+                <img src="img/koh logo.jpeg" class="w-8 sm:w-10 object-contain drop-shadow-xl" />
 
-</div>
+              </div>
               <!-- CENTER YOUTUBE LOGO -->
               <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
 
@@ -1947,7 +1863,7 @@
 
 
   <!-- Gallery -->
- 
+
   <!-- Footer -->
   <footer class="border-t border-slate-200 bg-white py-12 px-4 sm:px-6 lg:px-8">
     <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 sm:flex-row">
@@ -2207,51 +2123,51 @@
 
           // 🔥 BACK TO COVER (but controlled)
           '<img src="' + src + '" alt="Thailand package ' + (idx + 1) + '" loading="lazy" decoding="async" class="ko-img h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" />' +
-         '<!-- PACKAGE INCLUSIONS -->' +
+          '<!-- PACKAGE INCLUSIONS -->' +
 
-'<div class="border-t border-red-500 bg-white p-4">' +
+          '<div class="border-t border-red-500 bg-white p-4">' +
 
-'<h4 class="mb-3 text-sm font-bold text-navy">Package Inclusions</h4>' +
+          '<h4 class="mb-3 text-sm font-bold text-navy">Package Inclusions</h4>' +
 
-'<div class="grid grid-cols-4 gap-3 text-center">' +
+          '<div class="grid grid-cols-4 gap-3 text-center">' +
 
-'<div class="flex flex-col items-center">' +
-'<div class="text-4xl">🚘</div>' +
-'<span class="mt-1 text-[11px] font-semibold text-slate-700">Transfers</span>' +
-'</div>' +
+          '<div class="flex flex-col items-center">' +
+          '<div class="text-4xl">🚘</div>' +
+          '<span class="mt-1 text-[11px] font-semibold text-slate-700">Transfers</span>' +
+          '</div>' +
 
-'<div class="flex flex-col items-center">' +
-'<div class="text-4xl">🏩</div>' +
-'<span class="mt-1 text-[11px] font-semibold text-slate-700">Hotels</span>' +
-'</div>' +
+          '<div class="flex flex-col items-center">' +
+          '<div class="text-4xl">🏩</div>' +
+          '<span class="mt-1 text-[11px] font-semibold text-slate-700">Hotels</span>' +
+          '</div>' +
 
-'<div class="flex flex-col items-center">' +
-'<div class="text-4xl">🍷</div>' +
-'<span class="mt-1 text-[11px] font-semibold text-slate-700">Meals</span>' +
-'</div>' +
+          '<div class="flex flex-col items-center">' +
+          '<div class="text-4xl">🍷</div>' +
+          '<span class="mt-1 text-[11px] font-semibold text-slate-700">Meals</span>' +
+          '</div>' +
 
-'<div class="flex flex-col items-center">' +
-'<div class="text-4xl">🏝️</div>' +
-'<span class="mt-1 text-[11px] font-semibold text-slate-700">Sightseeing</span>' +
-'</div>' +
+          '<div class="flex flex-col items-center">' +
+          '<div class="text-4xl">🏝️</div>' +
+          '<span class="mt-1 text-[11px] font-semibold text-slate-700">Sightseeing</span>' +
+          '</div>' +
 
-'</div>' +
+          '</div>' +
 
-'<div class="mt-5 grid grid-cols-2 gap-3">' +
+          '<div class="mt-5 grid grid-cols-2 gap-3">' +
 
-'<a href="#" class="flex items-center justify-center rounded-xl bg-[#a50f2d] px-4 py-3 text-sm font-bold text-white transition hover:scale-105">' +
-'ENQUIRE NOW' +
-'</a>' +
+          '<a href="#" class="flex items-center justify-center rounded-xl bg-[#a50f2d] px-4 py-3 text-sm font-bold text-white transition hover:scale-105">' +
+          'ENQUIRE NOW' +
+          '</a>' +
 
-'<a href="https://wa.me/919599260057" target="_blank" class="flex items-center justify-center rounded-xl bg-[#32b255] px-4 py-3 text-sm font-bold text-white transition hover:scale-105">' +
-'WHATSAPP NOW' +
-'</a>' +
+          '<a href="https://wa.me/919599260057" target="_blank" class="flex items-center justify-center rounded-xl bg-[#32b255] px-4 py-3 text-sm font-bold text-white transition hover:scale-105">' +
+          'WHATSAPP NOW' +
+          '</a>' +
 
-'</div>' +
+          '</div>' +
 
-'</div>' +
-'</div>' +
-'</div>' +
+          '</div>' +
+          '</div>' +
+          '</div>' +
           '</article>'
         );
       }
@@ -2424,6 +2340,44 @@
       });
 
   </script>
+  <!-- MOBILE BOTTOM BAR -->
+  <div class="fixed bottom-0 left-0 right-0 z-[9999] lg:hidden">
+
+    <div class="grid grid-cols-3 text-white text-center">
+
+      <a href="tel:+919599260057" class="bg-blue-500 py-3">
+
+        <i class="fa-solid fa-phone"></i>
+
+        <p class="text-sm mt-1">
+          Call
+        </p>
+
+      </a>
+
+      <a href="#" class="bg-purple-500 py-3">
+
+        <i class="fa-regular fa-envelope"></i>
+
+        <p class="text-sm mt-1">
+          Enquire
+        </p>
+
+      </a>
+
+      <a href="https://wa.me/919599260057" class="bg-green-500 py-3">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+        <p class="text-sm mt-1">
+          WhatsApp
+        </p>
+
+      </a>
+
+    </div>
+
+  </div>
 </body>
 
 </html>
