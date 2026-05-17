@@ -2389,9 +2389,9 @@
 
     <div class="min-h-screen flex items-center justify-center p-4">
 
-      <div class="w-full max-w-[520px] rounded-[30px] bg-white shadow-2xl max-h-[90vh] overflow-y-auto">a
+      <div class="w-full max-w-[520px] rounded-[30px] bg-white shadow-2xl max-h-[90vh] overflow-y-auto">
 
-       <div class="p-3 sm:p-6">
+        <div class="p-3 sm:p-6">
 
           <!-- Header -->
 
@@ -2434,9 +2434,17 @@
 
               <input type="text" placeholder="Departure City" class="border rounded-xl p-3 w-full outline-none">
 
-              <input type="date" placeholder="Travel Date"
-                class="w-full h-[56px] rounded-2xl border border-slate-300 px-4 text-base bg-slate-50 appearance-none"
-                onclick="this.showPicker && this.showPicker()">
+              <div>
+<input
+type="text"
+placeholder="📅 Travel Date"
+id="travelDate"
+onfocus="(this.type='date')"
+onblur="if(!this.value)this.type='text'"
+class="w-full h-[56px] rounded-2xl border border-slate-300 px-4 text-base bg-slate-50">
+
+</div>
+
 
             </div>
 
@@ -2757,6 +2765,29 @@ ${Array.from(
 
     }
   </style>
+  <script>
+
+    
+      document.getElementById("travelDate");
+
+    const placeholder =
+      document.getElementById("datePlaceholder");
+
+    travelDate.addEventListener("change", function () {
+
+      if (this.value) {
+
+        placeholder.style.display = "none";
+
+      } else {
+
+        placeholder.style.display = "block";
+
+      }
+
+    });
+
+  </script>
 </body>
 
 </html>
