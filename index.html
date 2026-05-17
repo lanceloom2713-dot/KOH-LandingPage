@@ -2384,13 +2384,14 @@
   </div>
   <!-- ENQUIRY MODAL -->
 
- <div id="enquiryModal" class="fixed inset-0 z-[99999] hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4">
+  <div id="enquiryModal"
+    class="fixed inset-0 z-[99999] hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4">
 
     <div class="min-h-screen flex items-center justify-center p-4">
 
       <div class="w-full max-w-[520px] rounded-[30px] bg-white shadow-2xl max-h-[90vh] overflow-y-auto">a
 
-        <div class="p-4 sm:p-6">
+       <div class="p-3 sm:p-6">
 
           <!-- Header -->
 
@@ -2433,7 +2434,9 @@
 
               <input type="text" placeholder="Departure City" class="border rounded-xl p-3 w-full outline-none">
 
-              <input type="date" class="border rounded-xl p-3 w-full outline-none">
+              <input type="date" placeholder="Travel Date"
+                class="w-full h-[56px] rounded-2xl border border-slate-300 px-4 text-base bg-slate-50 appearance-none"
+                onclick="this.showPicker && this.showPicker()">
 
             </div>
 
@@ -2713,10 +2716,10 @@ Select Age
 </option>
 
 ${Array.from(
-{length:18},
-(_,age)=>
-`<option value="${age}">${age} Years</option>`
-).join('')}
+          { length: 18 },
+          (_, age) =>
+            `<option value="${age}">${age} Years</option>`
+        ).join('')}
 
 </select>
 </div>
@@ -2728,7 +2731,32 @@ ${Array.from(
     }
 
   </script>
+  <style>
+    @media (max-width:640px) {
 
+      #enquiryModal .max-w-\[520px\] {
+        width: 92vw !important;
+        max-height: 85vh !important;
+      }
+
+      #enquiryModal input,
+      #enquiryModal select {
+
+        height: 56px !important;
+        font-size: 16px !important;
+      }
+
+      #enquiryModal .flex.flex-wrap {
+        gap: 8px !important;
+      }
+
+      #enquiryModal label {
+
+        font-size: 14px !important;
+      }
+
+    }
+  </style>
 </body>
 
 </html>
