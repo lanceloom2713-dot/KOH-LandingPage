@@ -2451,89 +2451,101 @@
                 <option>4+</option>
 
               </select>
+              <div>
 
-              <select class="border rounded-xl p-3">
+                <select id="childrenSelect" class="border rounded-xl p-3 w-full" onchange="showChildAgeFields()">
 
-                <option>Children</option>
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
+                  <option value="">Children</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4+</option>
 
-              </select>
+                </select>
+
+              </div>
+
+
+              <!-- Child age fields will come here -->
+
+              <div id="childAgeContainer" class="grid grid-cols-2 gap-3 mt-3">
+
+              </div>
 
             </div>
 
 
-          <div>
+            <div>
 
-<p class="font-semibold mb-2">
-Duration
-</p>
+              <p class="font-semibold mb-2">
+                Duration
+              </p>
 
-<div class="flex flex-wrap gap-2">
+              <div class="flex flex-wrap gap-2">
 
-<input type="radio" id="d1" name="duration" value="3N-4D" class="hidden peer/d1">
+                <input type="radio" id="d1" name="duration" value="3N-4D" class="hidden peer/d1">
 
-<label for="d1"
-class="px-4 py-2 border rounded-full cursor-pointer text-sm hover:bg-blue-50 peer-checked/d1:bg-blue-600 peer-checked/d1:text-white">
+                <label for="d1"
+                  class="px-4 py-2 border rounded-full cursor-pointer text-sm hover:bg-blue-50 peer-checked/d1:bg-blue-600 peer-checked/d1:text-white">
 
-3N-4D
+                  3N-4D
 
-</label>
-
-
-<input type="radio" id="d2" name="duration" value="4N-5D" class="hidden peer/d2">
-
-<label for="d2"
-class="px-4 py-2 border rounded-full cursor-pointer text-sm hover:bg-blue-50 peer-checked/d2:bg-blue-600 peer-checked/d2:text-white">
-
-4N-5D
-
-</label>
+                </label>
 
 
-<input type="radio" id="d3" name="duration" value="5N-6D" class="hidden peer/d3">
+                <input type="radio" id="d2" name="duration" value="4N-5D" class="hidden peer/d2">
 
-<label for="d3"
-class="px-4 py-2 border rounded-full cursor-pointer text-sm hover:bg-blue-50 peer-checked/d3:bg-blue-600 peer-checked/d3:text-white">
+                <label for="d2"
+                  class="px-4 py-2 border rounded-full cursor-pointer text-sm hover:bg-blue-50 peer-checked/d2:bg-blue-600 peer-checked/d2:text-white">
 
-5N-6D
+                  4N-5D
 
-</label>
-
-
-<input type="radio" id="d4" name="duration" value="6N-7D" class="hidden peer/d4">
-
-<label for="d4"
-class="px-4 py-2 border rounded-full cursor-pointer text-sm hover:bg-blue-50 peer-checked/d4:bg-blue-600 peer-checked/d4:text-white">
-
-6N-7D
-
-</label>
+                </label>
 
 
-<input type="radio" id="d5" name="duration" value="7N-8D" class="hidden peer/d5">
+                <input type="radio" id="d3" name="duration" value="5N-6D" class="hidden peer/d3">
 
-<label for="d5"
-class="px-4 py-2 border rounded-full cursor-pointer text-sm hover:bg-blue-50 peer-checked/d5:bg-blue-600 peer-checked/d5:text-white">
+                <label for="d3"
+                  class="px-4 py-2 border rounded-full cursor-pointer text-sm hover:bg-blue-50 peer-checked/d3:bg-blue-600 peer-checked/d3:text-white">
 
-7N-8D
+                  5N-6D
 
-</label>
+                </label>
 
 
-<input type="radio" id="d6" name="duration" value="8N-9D" class="hidden peer/d6">
+                <input type="radio" id="d4" name="duration" value="6N-7D" class="hidden peer/d4">
 
-<label for="d6"
-class="px-4 py-2 border rounded-full cursor-pointer text-sm hover:bg-blue-50 peer-checked/d6:bg-blue-600 peer-checked/d6:text-white">
+                <label for="d4"
+                  class="px-4 py-2 border rounded-full cursor-pointer text-sm hover:bg-blue-50 peer-checked/d4:bg-blue-600 peer-checked/d4:text-white">
 
-8N-9D
+                  6N-7D
 
-</label>
+                </label>
 
-</div>
 
-</div>
+                <input type="radio" id="d5" name="duration" value="7N-8D" class="hidden peer/d5">
+
+                <label for="d5"
+                  class="px-4 py-2 border rounded-full cursor-pointer text-sm hover:bg-blue-50 peer-checked/d5:bg-blue-600 peer-checked/d5:text-white">
+
+                  7N-8D
+
+                </label>
+
+
+                <input type="radio" id="d6" name="duration" value="8N-9D" class="hidden peer/d6">
+
+                <label for="d6"
+                  class="px-4 py-2 border rounded-full cursor-pointer text-sm hover:bg-blue-50 peer-checked/d6:bg-blue-600 peer-checked/d6:text-white">
+
+                  8N-9D
+
+                </label>
+
+              </div>
+
+            </div>
 
             <div>
 
@@ -2660,6 +2672,58 @@ class="px-4 py-2 border rounded-full cursor-pointer text-sm hover:bg-blue-50 pee
       document
         .getElementById("enquiryModal")
         .classList.add("hidden");
+
+    }
+
+  </script>
+  <script>
+
+    function showChildAgeFields() {
+
+      const count =
+        document.getElementById(
+          "childrenSelect"
+        ).value;
+
+      const container =
+        document.getElementById(
+          "childAgeContainer"
+        );
+
+      container.innerHTML = '';
+
+      for (let i = 1; i <= count; i++) {
+
+        container.innerHTML += `
+
+<div>
+
+<label class="text-sm font-medium">
+
+Child ${i} Age
+
+</label>
+
+<select
+name="childAge${i}"
+class="w-full min-w-[200px] rounded-xl border border-slate-300 px-5 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-blue-500">
+
+<option value="">
+Select Age
+</option>
+
+${Array.from(
+{length:18},
+(_,age)=>
+`<option value="${age}">${age} Years</option>`
+).join('')}
+
+</select>
+</div>
+
+`;
+
+      }
 
     }
 
