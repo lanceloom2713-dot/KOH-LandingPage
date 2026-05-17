@@ -2400,7 +2400,7 @@
             <div>
 
               <h3 class="text-2xl font-bold text-navy">
-                Get Free Quote ✈️
+                Get Best Deal ✈️
               </h3>
 
             </div>
@@ -2453,27 +2453,20 @@ class="w-full h-[56px] rounded-2xl border border-slate-300 px-4 text-base bg-sla
 
             <div class="grid grid-cols-2 gap-3">
 
-              <select class="border rounded-xl p-3">
-
-                <option>Adults</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4+</option>
-
-              </select>
+             <input
+type="number"
+min="1"
+placeholder="Adults"
+class="w-full h-[56px] rounded-2xl border border-slate-300 px-4 text-base bg-slate-50 outline-none focus:ring-2 focus:ring-blue-500">
               <div>
 
-                <select id="childrenSelect" class="border rounded-xl p-3 w-full" onchange="showChildAgeFields()">
-
-                  <option value="">Children</option>
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4+</option>
-
-                </select>
+               <input
+type="number"
+id="childrenSelect"
+min="0"
+placeholder="Children"
+oninput="showChildAgeFields()"
+class="w-full h-[56px] rounded-2xl border border-slate-300 px-4 text-base bg-slate-50 outline-none focus:ring-2 focus:ring-blue-500">
 
               </div>
 
@@ -2551,6 +2544,20 @@ class="w-full h-[56px] rounded-2xl border border-slate-300 px-4 text-base bg-sla
                   class="px-4 py-2 border rounded-full cursor-pointer text-sm hover:bg-blue-50 peer-checked/d6:bg-blue-600 peer-checked/d6:text-white">
 
                   8N-9D
+
+                </label>
+                <input type="radio" id="d7" name="duration" value="9N-10D" class="hidden peer/d7">
+                 <label for="d7"
+                  class="px-4 py-2 border rounded-full cursor-pointer text-sm hover:bg-blue-50 peer-checked/d7:bg-blue-600 peer-checked/d7:text-white">
+
+                  9N-10D
+
+                </label>
+                <input type="radio" id="d8" name="duration" value="10N-11D" class="hidden peer/d8">
+                 <label for="d8"
+                  class="px-4 py-2 border rounded-full cursor-pointer text-sm hover:bg-blue-50 peer-checked/d8:bg-blue-600 peer-checked/d8:text-white">
+
+                  10N-11D
 
                 </label>
 
@@ -2691,10 +2698,9 @@ class="w-full h-[56px] rounded-2xl border border-slate-300 px-4 text-base bg-sla
 
     function showChildAgeFields() {
 
-      const count =
-        document.getElementById(
-          "childrenSelect"
-        ).value;
+      const count = parseInt(
+document.getElementById("childrenSelect").value
+) || 0;
 
       const container =
         document.getElementById(
